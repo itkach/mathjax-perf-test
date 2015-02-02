@@ -1,0 +1,838 @@
+<meta charset="utf-8">
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="MathJax/MathJax.js?config=MediaWiki_HTML-CSS.js"></script>
+<div><h1><a href="http://en.wikipedia.org/wiki/Integral" id="view-online-link">Integral</a></h1><div class="hatnote">This article is about the concept of definite integrals in <a href="Calculus" title="Calculus">calculus</a>.  For the indefinite integral, see <a href="Antiderivative" title="Antiderivative">antiderivative</a>.  For the set of numbers, see <a href="Integer" title="Integer">integer</a>.  For other uses, see <a href="Integral_(disambiguation)" title="Integral (disambiguation)" class="mw-disambig">Integral (disambiguation)</a>.</div>
+
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="http://en.wikipedia.org/wiki/File:Integral_example.svg" class="image"><img alt="Definite integral example" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Integral_example.svg/300px-Integral_example.svg.png" width="300" height="300" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Integral_example.svg/450px-Integral_example.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Integral_example.svg/600px-Integral_example.svg.png 2x" data-file-width="420" data-file-height="420"></a>
+<div class="thumbcaption">
+
+A definite integral of a function can be represented as the signed area of the region bounded by its graph.</div>
+</div>
+</div>
+
+<p>The <b>integral</b> is an important concept in <a href="Mathematics" title="Mathematics">mathematics</a>. Integration is one of the two main operations in <a href="Calculus" title="Calculus">calculus</a>, with its inverse, <a href="Derivative" title="Derivative">differentiation</a>, being the other. Given a <a href="Function_(mathematics)" title="Function (mathematics)">function</a> <span class="texhtml mvar" style="font-style:italic;">f</span> of a <a href="Real_number" title="Real number">real</a> <a href="Variable_(mathematics)" title="Variable (mathematics)">variable</a> <span class="texhtml mvar" style="font-style:italic;">x</span> and an <a href="Interval_(mathematics)" title="Interval (mathematics)">interval</a> <span class="texhtml">[<i>a</i>, <i>b</i>]</span> of the <a href="Real_line" title="Real line">real line</a>, the <b>definite integral</b></p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_a^b \! f(x)\,dx"></dd>
+</dl>
+<p>is defined informally as the signed <a href="Area_(geometry)" title="Area (geometry)" class="mw-redirect">area</a> of the region in the <span class="texhtml mvar" style="font-style:italic;">xy</span>-plane that is bounded by the <a href="Graph_of_a_function" title="Graph of a function">graph</a> of <span class="texhtml mvar" style="font-style:italic;">f</span>, the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis and the vertical lines <span class="texhtml"><i>x</i> = <i>a</i></span> and <span class="texhtml"><i>x</i> = <i>b</i></span>. The area above the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis adds to the total and that below the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis subtracts from the total.</p>
+<p>The term <i>integral</i> may also refer to the related notion of the <a href="Antiderivative" title="Antiderivative">antiderivative</a>, a function <span class="texhtml mvar" style="font-style:italic;">F</span> whose <a href="Derivative" title="Derivative">derivative</a> is the given function <span class="texhtml mvar" style="font-style:italic;">f</span>. In this case, it is called an <i><a href="Indefinite_integral" title="Indefinite integral" class="mw-redirect">indefinite integral</a></i> and is written:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F(x) = \int f(x)\,dx."></dd>
+</dl>
+<p>However, the integrals discussed in this article are those termed <i>definite integrals</i>.</p>
+<p>The principles of integration were formulated independently by <a href="Isaac_Newton" title="Isaac Newton">Isaac Newton</a> and <a href="Gottfried_Leibniz" title="Gottfried Leibniz" class="mw-redirect">Gottfried Leibniz</a> in the late 17th century. Through the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>, which they independently developed, integration is connected with differentiation: if <span class="texhtml mvar" style="font-style:italic;">f</span> is a continuous real-valued function defined on a <a href="Closed_interval" title="Closed interval" class="mw-redirect">closed interval</a> <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, then, once an antiderivative <span class="texhtml mvar" style="font-style:italic;">F</span> of <span class="texhtml mvar" style="font-style:italic;">f</span> is known, the definite integral of over that interval is given by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_a^b \! f(x)\,dx = F(b) - F(a)."></dd>
+</dl>
+<p>Integrals and derivatives became the basic tools of calculus, with numerous applications in science and <a href="Engineering" title="Engineering">engineering</a>. The founders of calculus thought of the integral as an infinite sum of rectangles of <a href="Infinitesimal" title="Infinitesimal">infinitesimal</a> width. A rigorous mathematical definition of the integral was given by <a href="Bernhard_Riemann" title="Bernhard Riemann">Bernhard Riemann</a>. It is based on a limiting procedure which approximates the area of a <a href="Curvilinear" title="Curvilinear" class="mw-redirect">curvilinear</a> region by breaking the region into thin vertical slabs. Beginning in the nineteenth century, more sophisticated notions of integrals began to appear, where the type of the function as well as the <a href="Domain_of_a_function" title="Domain of a function">domain</a> over which the integration is performed has been generalised. A <a href="Line_integral" title="Line integral">line integral</a> is defined for functions of two or three variables, and the interval of integration <span class="texhtml">[<i>a</i>, <i>b</i>]</span> is replaced by a certain <a href="Curve" title="Curve">curve</a> connecting two points on the plane or in the space. In a <a href="Surface_integral" title="Surface integral">surface integral</a>, the curve is replaced by a piece of a <a href="Surface" title="Surface">surface</a> in the three-dimensional space.</p>
+<p>Integrals of <a href="Differential_form" title="Differential form">differential forms</a> play a fundamental role in modern <a href="Differential_geometry" title="Differential geometry">differential geometry</a>. These generalizations of integrals first arose from the needs of <a href="Physics" title="Physics">physics</a>, and they play an important role in the formulation of many <a href="Physical_laws" title="Physical laws" class="mw-redirect">physical laws</a>, notably those of <a href="Classical_electromagnetism" title="Classical electromagnetism">electrodynamics</a>. There are many modern concepts of integration, among these, the most common is based on the abstract mathematical theory known as <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a>, developed by <a href="Henri_Lebesgue" title="Henri Lebesgue">Henri Lebesgue</a>.</p>
+
+
+
+<h2><span class="mw-headline" id="History">History</span></h2>
+<div class="hatnote boilerplate seealso">See also: <a href="History_of_calculus" title="History of calculus">History of calculus</a></div>
+<h3><span class="mw-headline" id="Pre-calculus_integration">Pre-calculus integration</span></h3>
+<p>The first documented systematic technique capable of determining integrals is the <a href="Method_of_exhaustion" title="Method of exhaustion">method of exhaustion</a> of the <a href="Ancient_Greek" title="Ancient Greek">ancient Greek</a> astronomer <a href="Eudoxus_of_Cnidus" title="Eudoxus of Cnidus">Eudoxus</a> (<i>ca.</i> 370 BC), which sought to find areas and volumes by breaking them up into an infinite number of divisions for which the area or volume was known. This method was further developed and employed by <a href="Archimedes" title="Archimedes">Archimedes</a> in the 3rd century BC and used to calculate areas for <a href="Parabola" title="Parabola">parabolas</a> and an approximation to the area of a circle. Similar methods were independently developed in China around the 3rd century AD by <a href="Liu_Hui" title="Liu Hui">Liu Hui</a>, who used it to find the area of the circle. This method was later used in the 5th century by Chinese father-and-son mathematicians <a href="Zu_Chongzhi" title="Zu Chongzhi">Zu Chongzhi</a> and <a href="Zu_Geng_(mathematician)" title="Zu Geng (mathematician)" class="mw-redirect">Zu Geng</a> to find the volume of a sphere (<a href="#CITEREFShea2007">Shea 2007</a>; <a href="#CITEREFKatz2004">Katz 2004</a>, pp. 125–126).</p>
+<p>The next significant advances in integral calculus did not begin to appear until the 16th century. At this time the work of <a href="Bonaventura_Cavalieri" title="Bonaventura Cavalieri">Cavalieri</a> with his <a href="Cavalieri%27s_principle" title="Cavalieri's principle"><i>method of indivisibles</i></a>, and work by <a href="Pierre_de_Fermat" title="Pierre de Fermat">Fermat</a>, began to lay the foundations of modern calculus, with Cavalieri computing the integrals of <span class="texhtml"><i>x</i><sup><i>n</i></sup></span> up to degree <span class="texhtml"><i>n</i> = 9</span> in <a href="Cavalieri%27s_quadrature_formula" title="Cavalieri's quadrature formula">Cavalieri's quadrature formula</a>. Further steps were made in the early 17th century by <a href="Isaac_Barrow" title="Isaac Barrow">Barrow</a> and <a href="Evangelista_Torricelli" title="Evangelista Torricelli">Torricelli</a>, who provided the first hints of a connection between integration and <a href="Differential_calculus" title="Differential calculus">differentiation</a>. Barrow provided the first proof of the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>. <a href="John_Wallis" title="John Wallis">Wallis</a> generalized Cavalieri's method, computing integrals of <span class="texhtml mvar" style="font-style:italic;">x</span> to a general power, including negative powers and fractional powers.</p>
+<h3><span class="mw-headline" id="Newton_and_Leibniz">Newton and Leibniz</span></h3>
+<p>The major advance in integration came in the 17th century with the independent discovery of the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a> by <a href="Isaac_Newton" title="Isaac Newton">Newton</a> and <a href="Gottfried_Leibniz" title="Gottfried Leibniz" class="mw-redirect">Leibniz</a>. The theorem demonstrates a connection between integration and differentiation. This connection, combined with the comparative ease of differentiation, can be exploited to calculate integrals. In particular, the fundamental theorem of calculus allows one to solve a much broader class of problems. Equal in importance is the comprehensive mathematical framework that both Newton and Leibniz developed. Given the name infinitesimal calculus, it allowed for precise analysis of functions within continuous domains. This framework eventually became modern <a href="Calculus" title="Calculus">calculus</a>, whose notation for integrals is drawn directly from the work of Leibniz.</p>
+<h3><span class="mw-headline" id="Formalization">Formalization</span></h3>
+<p>While Newton and Leibniz provided a systematic approach to integration, their work lacked a degree of <a href="Rigor#Mathematical_rigour" title="Rigor" class="mw-redirect">rigour</a>. <a href="George_Berkeley" title="George Berkeley">Bishop Berkeley</a> memorably attacked the vanishing increments used by Newton, calling them "<a href="The_Analyst#Content" title="The Analyst">ghosts of departed quantities</a>". Calculus acquired a firmer footing with the development of <a href="Limit_(mathematics)" title="Limit (mathematics)">limits</a>. Integration was first rigorously formalized, using limits, by <a href="Bernhard_Riemann" title="Bernhard Riemann">Riemann</a>. Although all bounded piecewise continuous functions are Riemann integrable on a bounded interval, subsequently more general functions were considered—particularly in the context of <a href="Fourier_analysis" title="Fourier analysis">Fourier analysis</a>—to which Riemann's definition does not apply, and <a href="Henri_Lebesgue" title="Henri Lebesgue">Lebesgue</a> formulated a different definition of integral, founded in <a href="Measure_(mathematics)" title="Measure (mathematics)">measure theory</a> (a subfield of <a href="Real_analysis" title="Real analysis">real analysis</a>). Other definitions of integral, extending Riemann's and Lebesgue's approaches, were proposed. These approaches based on the real number system are the ones most common today, but alternative approaches exist, such as a definition of integral as the <a href="Standard_part" title="Standard part" class="mw-redirect">standard part</a> of an infinite Riemann sum, based on the <a href="Hyperreal_number" title="Hyperreal number">hyperreal number</a> system.</p>
+<h3><span class="mw-headline" id="Historical_notation">Historical notation</span></h3>
+<p><a href="Isaac_Newton" title="Isaac Newton">Isaac Newton</a> used a small vertical bar above a variable to indicate integration, or placed the variable inside a box. The vertical bar was easily confused with <span class="texhtml"><span class="sfrac nowrap;"><span style="display:none; display:inline-block; text-align:center;"><span style="display:block; line-height:0.8em; font-size:70%; padding:0 0.1em;"><b>.</b></span><span style="display:block; line-height:1em; padding:0 0.1em;"><i>x</i></span></span></span></span> or <span class="texhtml"><i>x</i>′</span>, which Newton used to indicate differentiation, and the box notation was difficult for printers to reproduce, so these notations were not widely adopted.</p>
+<p>The modern notation for the indefinite integral was introduced by <a href="Gottfried_Leibniz" title="Gottfried Leibniz" class="mw-redirect">Gottfried Leibniz</a> in 1675 (<a href="#CITEREFBurton1988">Burton 1988</a>, p. 359; <a href="#CITEREFLeibniz1899">Leibniz 1899</a>, p. 154). He adapted the <a href="Integral_symbol" title="Integral symbol">integral symbol</a>, <b>∫</b>, from the letter <i>ſ</i> (<a href="Long_s" title="Long s">long s</a>), standing for <i>summa</i> (written as <i>ſumma</i>; Latin for "sum" or "total"). The modern notation for the definite integral, with limits above and below the integral sign, was first used by <a href="Joseph_Fourier" title="Joseph Fourier">Joseph Fourier</a> in <i>Mémoires</i> of the French Academy around 1819–20, reprinted in his book of 1822 (<a href="#CITEREFCajori1929">Cajori 1929</a>, pp. 249–250; <a href="#CITEREFFourier1822">Fourier 1822</a>, §231).</p>
+<h2><span class="mw-headline" id="Terminology_and_notation">Terminology and notation</span></h2>
+<p>The simplest case, the integral with respect to <span class="texhtml mvar" style="font-style:italic;">x</span> of a real-valued function <span class="texhtml"><i>f</i>(<i>x</i>)</span>, is written as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int f(x)\,dx . "></dd>
+</dl>
+<p>The integral sign <span class="texhtml">∫</span> represents integration. The symbol <span class="texhtml mvar" style="font-style:italic;">dx</span> (explained below) indicates the variable of integration, <span class="texhtml mvar" style="font-style:italic;">x</span>. The function <span class="texhtml"><i>f</i>(<i>x</i>)</span> which is to be integrated is called the <i>integrand</i>. In correct mathematical typography, the <span class="texhtml mvar" style="font-style:italic;">dx</span> is separated from the integrand by a space (as shown). Some authors use an upright <span class="texhtml"><i>d</i></span> (that is, <span class="texhtml">d<i>x</i></span> instead of <span class="texhtml"><i>dx</i></span>). Also, some authors place the symbol <span class="texhtml mvar" style="font-style:italic;">dx</span> before <span class="texhtml"><i>f</i>(<i>x</i>)</span> rather than after it. Because there is no domain specified, the above integral is called an <i>indefinite integral</i>.</p>
+<p>When integrating over a specified domain, we speak of a <i>definite integral</i>. Integrating over a domain <span class="texhtml mvar" style="font-style:italic;">D</span> is written as <img class="mwe-math-fallback-image-inline tex" alt="\int_D f(x)\,dx">. If <i>D</i> is an interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> of the real line, the integral is usually written <img class="mwe-math-fallback-image-inline tex" alt="\displaystyle \int_a^b f(x)\,dx ">. The domain <span class="texhtml mvar" style="font-style:italic;">D</span> or the interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> is called the <i>domain of integration</i>.</p>
+<p>If a function has an integral, it is said to be <i>integrable</i>. In general, the integrand may be a function of more than one variable, and the domain of integration may be an area, volume, a higher-dimensional region, or even an abstract space that does not have a geometric structure in any usual sense (such as a <a href="Sample_space" title="Sample space">sample space</a> in probability theory).</p>
+<p>In <a href="Modern_Arabic_mathematical_notation" title="Modern Arabic mathematical notation">modern Arabic mathematical notation</a>, a reflected integral symbol <a href="http://en.wikipedia.org/wiki/File:ArabicIntegralSign.svg" class="image"><img alt="ArabicIntegralSign.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ArabicIntegralSign.svg/22px-ArabicIntegralSign.svg.png" width="22" height="22" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ArabicIntegralSign.svg/33px-ArabicIntegralSign.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ArabicIntegralSign.svg/44px-ArabicIntegralSign.svg.png 2x" data-file-width="64" data-file-height="64"></a> is used (<a href="#CITEREFW3C2006">W3C 2006</a>).</p>
+<p>The symbol <span class="texhtml mvar" style="font-style:italic;">dx</span> has different interpretations depending on the theory being used. In Leibniz's notation, <span class="texhtml mvar" style="font-style:italic;">dx</span> is interpreted as an infinitesimal change in <span class="texhtml mvar" style="font-style:italic;">x</span>. Although Leibniz's interpretation <a href="The_Analyst#Content" title="The Analyst">lacks rigour</a>, his integration notation is the most common one in use today. If the underlying theory of integration is not important, <span class="texhtml mvar" style="font-style:italic;">dx</span> can be seen as strictly a notation indicating that <span class="texhtml mvar" style="font-style:italic;">x</span> is a <a href="Bound_variable" title="Bound variable" class="mw-redirect">dummy variable</a> of integration; if the integral is seen as a <a href="Riemann_integral" title="Riemann integral">Riemann integral</a>, <span class="texhtml mvar" style="font-style:italic;">dx</span> indicates that the sum is over subintervals in the domain of <span class="texhtml mvar" style="font-style:italic;">x</span>; in a <a href="Riemann%E2%80%93Stieltjes_integral" title="Riemann–Stieltjes integral">Riemann–Stieltjes integral</a>, it indicates the weight applied to a subinterval in the sum; in <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a> and its extensions, <span class="texhtml mvar" style="font-style:italic;">dx</span> is a <a href="Measure_(mathematics)" title="Measure (mathematics)">measure</a>, a type of function which assigns sizes to sets; in <a href="Non-standard_analysis" title="Non-standard analysis">non-standard analysis</a>, it is an <a href="Infinitesimal" title="Infinitesimal">infinitesimal</a>; and in the theory of <a href="Differentiable_manifold" title="Differentiable manifold">differentiable manifolds</a>, it is often a <a href="Differential_form" title="Differential form">differential form</a>, a quantity which assigns numbers to <a href="Tangent_vector" title="Tangent vector">tangent vectors</a>. Depending on the situation, the notation may vary slightly to capture the important features of the situation. For instance, when integrating a variable <span class="texhtml mvar" style="font-style:italic;">x</span> with respect to a measure <span class="texhtml mvar" style="font-style:italic;">μ</span>, the notation <span class="texhtml mvar" style="font-style:italic;">dμ(<i>x</i>)</span> is sometimes used to emphasize the dependence on <i>x</i>.</p>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>Integrals appear in many practical situations. If a swimming pool is rectangular with a flat bottom, then from its length, width, and depth we can easily determine the volume of water it can contain (to fill it), the area of its surface (to cover it), and the length of its edge (to rope it). But if it is oval with a rounded bottom, all of these quantities call for integrals. Practical approximations may suffice for such trivial examples, but <a href="Precision_engineering" title="Precision engineering">precision engineering</a> (of any discipline) requires exact and rigorous values for these elements.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Integral_approximations.svg" class="image"><img alt="Integral approximation example" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Integral_approximations.svg/220px-Integral_approximations.svg.png" width="220" height="220" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Integral_approximations.svg/330px-Integral_approximations.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Integral_approximations.svg/440px-Integral_approximations.svg.png 2x" data-file-width="420" data-file-height="420"></a>
+<div class="thumbcaption">
+
+Approximations to integral of √<span style="text-decoration:overline"><span class="texhtml mvar" style="font-style:italic;">x</span></span> from 0 to 1, with 5 <span style="color:#fec200">■</span>  (yellow) right endpoint partitions and 12 <span style="color:#009246">■</span>  (green) left endpoint partitions</div>
+</div>
+</div>
+<p>To start off, consider the curve <span class="texhtml"><i>y</i> = <i>f</i>(<i>x</i>)</span> between <span class="texhtml"><i>x</i> = 0</span> and <span class="texhtml"><i>x</i> = 1</span> with <span class="texhtml"><i>f</i>(<i>x</i>) = <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>x</i></span></span></span>. We ask:</p>
+<dl>
+<dd>What is the area under the function <span class="texhtml mvar" style="font-style:italic;">f</span>, in the interval from 0 to 1?</dd>
+</dl>
+<p>and call this (yet unknown) area the <b>integral</b> of <span class="texhtml mvar" style="font-style:italic;">f</span>. The notation for this integral will be</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_0^1 \sqrt x \, dx \,\!."></dd>
+</dl>
+<p>As a first approximation, look at the unit square given by the sides <span class="texhtml"><i>x</i> = 0</span> to <span class="texhtml"><i>x</i> = 1</span> and <span class="texhtml"><i>y</i> = <i>f</i>(0) = 0</span> and <span class="texhtml"><i>y</i> = <i>f</i>(1) = 1</span>. Its area is exactly 1. As it is, the true value of the integral must be somewhat less. Decreasing the width of the approximation rectangles shall give a better result; so cross the interval in five steps, using the approximation points 0, 1/5, 2/5, and so on to 1. Fit a box for each step using the right end height of each curve piece, thus <span class="texhtml"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">1/5</span></span></span>, <span class="texhtml"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">2/5</span></span></span>, and so on to <span class="texhtml"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">1</span></span> = 1</span>. Summing the areas of these rectangles, we get a better approximation for the sought integral, namely</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\textstyle \sqrt {\frac {1} {5}} \left ( \frac {1} {5} - 0 \right ) + \sqrt {\frac {2} {5}} \left ( \frac {2} {5} - \frac {1} {5} \right ) + \cdots + \sqrt {\frac {5} {5}} \left ( \frac {5} {5} - \frac {4} {5} \right ) \approx 0.7497.\,\!"></dd>
+</dl>
+<p>We are taking a sum of finitely many function values of <span class="texhtml mvar" style="font-style:italic;">f</span>, multiplied with the differences of two subsequent approximation points. We can easily see that the approximation is still too large. Using more steps produces a closer approximation, but will never be exact: replacing the 5 subintervals by twelve in the same way, but with the left end height of each piece, we will get an approximate value for the area of 0.6203, which is too small. The key idea is the transition from adding <i>finitely many</i> differences of approximation points multiplied by their respective function values to using infinitely many fine, or <i><a href="Infinitesimal" title="Infinitesimal">infinitesimal</a></i> steps.</p>
+<p>As for the <i>actual calculation of integrals</i>, the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>, due to Newton and Leibniz, is the fundamental link between the operations of <a href="Derivative" title="Derivative">differentiating</a> and integrating. Applied to the square root curve, <span class="texhtml"><i>f</i>(<i>x</i>) = <i>x</i><sup>1/2</sup></span>, it says to look at the <a href="Antiderivative" title="Antiderivative">antiderivative</a> <span class="texhtml"><i>F</i>(<i>x</i>) = <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; padding:0 0.1em;">2</span><span class="visualhide">/</span><span style="display:block; line-height:1em; padding:0 0.1em; border-top:1px solid;">3</span></span><i>x</i><sup>3/2</sup></span>, and simply take <span class="texhtml"><i>F</i>(1) − <i>F</i>(0)</span>, where 0 and 1 are the boundaries of the <a href="Interval_(mathematics)" title="Interval (mathematics)">interval</a> [0, 1]. So the <i>exact</i> value of the area under the curve is computed formally as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_0^1 \sqrt x \,dx = \int_0^1 x^{1/2} \,dx = F(1)- F(0) = \frac{2}{3}."></dd>
+</dl>
+<p>(This is a case of a general rule, that for <span class="texhtml"><i>f</i>(<i>x</i>) = <i>x</i><sup><i>q</i></sup></span>, with <span class="texhtml"><i>q</i> ≠ −1</span>, the related function, the so-called antiderivative is <span class="texhtml"><i>F</i>(<i>x</i>) = <i>x</i><sup><i>q</i> + 1</sup>/(<i>q</i> + 1).</span>)</p>
+<p>The notation</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int f(x) \, dx \,\! "></dd>
+</dl>
+<p>conceives the integral as a weighted sum, denoted by the elongated <span class="texhtml mvar" style="font-style:italic;">s</span>, of function values, <span class="texhtml"><i>f</i>(<i>x</i>)</span>, multiplied by infinitesimal step widths, the so-called <i>differentials</i>, denoted by <span class="texhtml mvar" style="font-style:italic;">dx</span>. The multiplication sign is usually omitted.</p>
+<p>Historically, after the failure of early efforts to rigorously interpret infinitesimals, Riemann formally defined integrals as a <a href="Limit_(mathematics)" title="Limit (mathematics)">limit</a> of weighted sums, so that the <span class="texhtml mvar" style="font-style:italic;">dx</span> suggested the limit of a difference (namely, the interval width). Shortcomings of Riemann's dependence on intervals and continuity motivated newer definitions, especially the <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integral</a>, which is founded on an ability to extend the idea of "measure" in much more flexible ways. Thus the notation</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_A f(x) \, d\mu \,\!"></dd>
+</dl>
+<p>refers to a weighted sum in which the function values are partitioned, with <span class="texhtml mvar" style="font-style:italic;">μ</span> measuring the weight to be assigned to each value. Here <span class="texhtml mvar" style="font-style:italic;">A</span> denotes the region of integration.</p>
+<p><a href="Differential_geometry" title="Differential geometry">Differential geometry</a>, with its "calculus on <a href="Manifold" title="Manifold">manifolds</a>", gives the familiar notation yet another interpretation. Now <span class="texhtml"><i>f</i>(<i>x</i>)</span> and <span class="texhtml mvar" style="font-style:italic;">dx</span> become a <a href="Differential_form" title="Differential form">differential form</a>, <span class="texhtml"><i>ω</i> = <i>f</i>(<i>x</i>) <i>dx</i></span>, a new <a href="Differential_operator" title="Differential operator">differential operator</a> <span class="texhtml"><i>d</i></span>, known as the <a href="Exterior_derivative" title="Exterior derivative">exterior derivative</a> is introduced, and the fundamental theorem becomes the more general <a href="Stokes%27_theorem" title="Stokes' theorem">Stokes' theorem</a>,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_{A} d\omega = \int_{\part A} \omega , \,\!"></dd>
+</dl>
+<p>from which <a href="Green%27s_theorem" title="Green's theorem">Green's theorem</a>, the <a href="Divergence_theorem" title="Divergence theorem">divergence theorem</a>, and the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a> follow.</p>
+<p>More recently, infinitesimals have reappeared with rigor, through modern innovations such as <a href="Non-standard_analysis" title="Non-standard analysis">non-standard analysis</a>. Not only do these methods vindicate the intuitions of the pioneers; they also lead to new mathematics.</p>
+<p>Although there are differences between these conceptions of integral, there is considerable overlap. Thus, the area of the surface of the oval swimming pool can be handled as a geometric ellipse, a sum of infinitesimals, a Riemann integral, a Lebesgue integral, or as a manifold with a differential form. The calculated result will be the same for all.</p>
+<div class="thumb tnone center">
+<div class="thumbinner" style="width:608px;max-width:608px">
+<div style="clear:both;font-weight:bold;text-align:center;background-color:">Darboux sums</div>
+<div style="float:left;margin:1px;width:302px;max-width:302px">
+<div class="thumbimage"><a href="http://en.wikipedia.org/wiki/File:Riemann_Integration_and_Darboux_Upper_Sums.gif" class="image"><img alt="Upper Darboux sum example" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Riemann_Integration_and_Darboux_Upper_Sums.gif/300px-Riemann_Integration_and_Darboux_Upper_Sums.gif" width="300" height="225" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Riemann_Integration_and_Darboux_Upper_Sums.gif/450px-Riemann_Integration_and_Darboux_Upper_Sums.gif 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Riemann_Integration_and_Darboux_Upper_Sums.gif/600px-Riemann_Integration_and_Darboux_Upper_Sums.gif 2x" data-file-width="800" data-file-height="600"></a></div>
+<div class="thumbcaption" style="clear:left">
+<div class="center" style="width:auto; margin-left:auto; margin-right:auto;">Darboux upper sums of the function <span class="texhtml"><i>y</i> = <i>x</i><sup>2</sup></span></div>
+</div>
+</div>
+<div style="float:left;margin:1px;width:302px;max-width:302px">
+<div class="thumbimage"><a href="http://en.wikipedia.org/wiki/File:Riemann_Integration_and_Darboux_Lower_Sums.gif" class="image"><img alt="Lower Darboux sum example" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Riemann_Integration_and_Darboux_Lower_Sums.gif/300px-Riemann_Integration_and_Darboux_Lower_Sums.gif" width="300" height="225" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Riemann_Integration_and_Darboux_Lower_Sums.gif/450px-Riemann_Integration_and_Darboux_Lower_Sums.gif 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Riemann_Integration_and_Darboux_Lower_Sums.gif/600px-Riemann_Integration_and_Darboux_Lower_Sums.gif 2x" data-file-width="800" data-file-height="600"></a></div>
+<div class="thumbcaption" style="clear:left">
+<div class="center" style="width:auto; margin-left:auto; margin-right:auto;">Darboux lower sums of the function <span class="texhtml"><i>y</i> = <i>x</i><sup>2</sup></span></div>
+</div>
+</div>
+
+</div>
+</div>
+<h2><span class="mw-headline" id="Formal_definitions">Formal definitions</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:204px;max-width:204px">
+<div style="margin:1px;width:202px;max-width:202px">
+<div class="thumbimage"><a href="http://en.wikipedia.org/wiki/File:Integral_Riemann_sum.png" class="image"><img alt="Riemann integral approximation example" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Integral_Riemann_sum.png/200px-Integral_Riemann_sum.png" width="200" height="200" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Integral_Riemann_sum.png/300px-Integral_Riemann_sum.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Integral_Riemann_sum.png/400px-Integral_Riemann_sum.png 2x" data-file-width="1260" data-file-height="1260"></a></div>
+<div class="thumbcaption" style="clear:left">
+<div class="center" style="width:auto; margin-left:auto; margin-right:auto;">Integral example with irregular partitions (largest marked in red)</div>
+</div>
+</div>
+<div style="margin:1px;width:202px;max-width:202px">
+<div class="thumbimage"><a href="http://en.wikipedia.org/wiki/File:Riemann_sum_convergence.png" class="image"><img alt="Riemann sum convergence" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Riemann_sum_convergence.png/200px-Riemann_sum_convergence.png" width="200" height="200" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Riemann_sum_convergence.png/300px-Riemann_sum_convergence.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Riemann_sum_convergence.png/400px-Riemann_sum_convergence.png 2x" data-file-width="1260" data-file-height="1260"></a></div>
+<div class="thumbcaption" style="clear:left">
+<div class="center" style="width:auto; margin-left:auto; margin-right:auto;">Riemann sums converging</div>
+</div>
+</div>
+
+</div>
+</div>
+<p>There are many ways of formally defining an integral, not all of which are equivalent. The differences exist mostly to deal with differing special cases which may not be integrable under other definitions, but also occasionally for pedagogical reasons. The most commonly used definitions of integral are Riemann integrals and Lebesgue integrals.</p>
+<h3><span class="mw-headline" id="Riemann_integral">Riemann integral</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Riemann_integral" title="Riemann integral">Riemann integral</a></div>
+<p>The Riemann integral is defined in terms of <a href="Riemann_sum" title="Riemann sum">Riemann sums</a> of functions with respect to <i>tagged partitions</i> of an interval. Let <span class="texhtml">[<i>a</i>, <i>b</i>]</span> be a <a href="Interval_(mathematics)" title="Interval (mathematics)">closed interval</a> of the real line; then a <i>tagged partition</i> of <span class="texhtml">[<i>a</i>, <i>b</i>]</span> is a finite sequence</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" a = x_0 \le t_1 \le x_1 \le t_2 \le x_2 \le \cdots \le x_{n-1} \le t_n \le x_n = b . \,\!"></dd>
+</dl>
+<p>This partitions the interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> into <span class="texhtml mvar" style="font-style:italic;">n</span> sub-intervals <span class="texhtml">[<i>x</i><sub><i>i</i>−1</sub>, <i>x</i><sub><i>i</i></sub>]</span> indexed by <span class="texhtml mvar" style="font-style:italic;">i</span>, each of which is "tagged" with a distinguished point <span class="texhtml"><i>t</i><sub><i>i</i></sub> ∈ [<i>x</i><sub><i>i</i>−1</sub>, <i>x</i><sub><i>i</i></sub>]</span>. A <i>Riemann sum</i> of a function <span class="texhtml mvar" style="font-style:italic;">f</span> with respect to such a tagged partition is defined as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\sum_{i=1}^{n} f(t_i) \Delta_i ; "></dd>
+</dl>
+<p>thus each term of the sum is the area of a rectangle with height equal to the function value at the distinguished point of the given sub-interval, and width the same as the sub-interval width. Let <span class="texhtml">Δ<sub><i>i</i></sub> = <i>x</i><sub><i>i</i></sub>−<i>x</i><sub><i>i</i>−1</sub></span> be the width of sub-interval <span class="texhtml mvar" style="font-style:italic;">i</span>; then the <i>mesh</i> of such a tagged partition is the width of the largest sub-interval formed by the partition, <span class="texhtml">max<sub><i>i</i>=1…<i>n</i></sub> Δ<sub><i>i</i></sub></span>. The <i>Riemann integral</i> of a function <span class="texhtml mvar" style="font-style:italic;">f</span> over the interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> is equal to <span class="texhtml mvar" style="font-style:italic;">S</span> if:</p>
+<dl>
+<dd>For all <span class="texhtml"><i>ε</i> &gt; 0</span> there exists <span class="texhtml"><i>δ</i> &gt; 0</span> such that, for any tagged partition <span class="texhtml">[<i>a</i>, <i>b</i>]</span> with mesh less than <span class="texhtml mvar" style="font-style:italic;">δ</span>, we have
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left| S - \sum_{i=1}^{n} f(t_i)\Delta_i \right| &lt; \varepsilon."></dd>
+</dl>
+</dd>
+</dl>
+<p>When the chosen tags give the maximum (respectively, minimum) value of each interval, the Riemann sum becomes an upper (respectively, lower) <a href="Darboux_integral" title="Darboux integral">Darboux sum</a>, suggesting the close connection between the Riemann integral and the <a href="Darboux_integral" title="Darboux integral">Darboux integral</a>.</p>
+<h3><span class="mw-headline" id="Lebesgue_integral">Lebesgue integral</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;"><a href="http://en.wikipedia.org/wiki/File:RandLintegrals.svg" class="image"><img alt="Comparison of Riemann and Lebesgue integrals" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RandLintegrals.svg/250px-RandLintegrals.svg.png" width="250" height="188" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RandLintegrals.svg/375px-RandLintegrals.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/RandLintegrals.svg/500px-RandLintegrals.svg.png 2x" data-file-width="512" data-file-height="384"></a>
+<div class="thumbcaption">
+
+Riemann–Darboux's integration (top) and Lebesgue integration (bottom)</div>
+</div>
+</div>
+<p>It is often of interest, both in theory and applications, to be able to pass to the limit under the integral. For instance, a sequence of functions can frequently be constructed that approximate, in a suitable sense, the solution to a problem. Then the integral of the solution function should be the limit of the integrals of the approximations. However, many functions that can be obtained as limits are not Riemann integrable, and so such limit theorems do not hold with the Riemann integral. Therefore it is of great importance to have a definition of the integral that allows a wider class of functions to be integrated (<a href="#CITEREFRudin1987">Rudin 1987</a>).</p>
+<p>Such an integral is the Lebesgue integral, that exploits the following fact to enlarge the class of integrable functions: if the values of a function are rearranged over the domain, the integral of a function should remain the same. Thus <a href="Henri_Lebesgue" title="Henri Lebesgue">Henri Lebesgue</a> introduced the integral bearing his name, explaining this integral thus in a letter to <a href="Paul_Montel" title="Paul Montel">Paul Montel</a>:</p>
+<blockquote class="templatequote">
+<p>I have to pay a certain sum, which I have collected in my pocket. I take the bills and coins out of my pocket and give them to the creditor in the order I find them until I have reached the total sum. This is the Riemann integral. But I can proceed differently. After I have taken all the money out of my pocket I order the bills and coins according to identical values and then I pay the several heaps one after the other to the creditor. This is my integral.</p>
+</blockquote>
+<dl>
+<dd><small><i>Source</i>: (<a href="#CITEREFSiegmund-Schultze2008">Siegmund-Schultze 2008</a>)</small></dd>
+</dl>
+<p>As <a href="#CITEREFFolland1984">Folland (1984</a>, p. 56) puts it, "To compute the Riemann integral of <span class="texhtml mvar" style="font-style:italic;">f</span>, one partitions the domain <span class="texhtml">[<i>a</i>, <i>b</i>]</span> into subintervals", while in the Lebesgue integral, "one is in effect partitioning the range of <span class="texhtml mvar" style="font-style:italic;">f</span>". The definition of the Lebesgue integral thus begins with a <a href="Measure_(mathematics)" title="Measure (mathematics)">measure</a>, μ. In the simplest case, the <a href="Lebesgue_measure" title="Lebesgue measure">Lebesgue measure</a> <span class="texhtml"><i>μ</i>(<i>A</i>)</span> of an interval <span class="texhtml"><i>A</i> = [<i>a</i>, <i>b</i>]</span> is its width, <span class="texhtml"><i>b</i> − <i>a</i></span>, so that the Lebesgue integral agrees with the (proper) Riemann integral when both exist. In more complicated cases, the sets being measured can be highly fragmented, with no continuity and no resemblance to intervals.</p>
+<p>Using the "partitioning the range of <span class="texhtml mvar" style="font-style:italic;">f</span>" philosophy, the integral of a non-negative function <span class="texhtml"><i>f</i> : <b>R</b> → <b>R</b></span> should be the sum over <span class="texhtml mvar" style="font-style:italic;">t</span> of the areas between a thin horizontal strip between <span class="texhtml"><i>y</i> = <i>t</i></span> and <span class="texhtml"><i>y</i> = <i>t</i> + <i>dt</i></span>. This area is just <span class="texhtml"><i>μ</i>{ <i>x</i> : <i>f</i>(<i>x</i>) &gt; <i>t</i>} <i>dt</i></span>. Let <span class="texhtml"><i>f</i><sup>∗</sup>(<i>t</i>) = <i>μ</i>{ <i>x</i> : <i>f</i>(<i>x</i>) &gt; <i>t</i></span>}. The Lebesgue integral of <span class="texhtml mvar" style="font-style:italic;">f</span> is then defined by (<a href="#CITEREFLiebLoss2001">Lieb &amp; Loss 2001</a>)</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int f = \int_0^\infty f^*(t)\,dt"></dd>
+</dl>
+<p>where the integral on the right is an ordinary improper Riemann integral (<span class="texhtml"><i>f</i><sup>∗</sup></span> is a strictly decreasing positive function, and therefore has a well-defined improper Riemann integral). For a suitable class of functions (the <a href="Measurable_function" title="Measurable function">measurable functions</a>) this defines the Lebesgue integral.</p>
+<p>A general measurable function <span class="texhtml mvar" style="font-style:italic;">f</span> is Lebesgue integrable if the area between the graph of <span class="texhtml mvar" style="font-style:italic;">f</span> and the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis is finite:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_E |f|\,d\mu &lt; + \infty."></dd>
+</dl>
+<p>In that case, the integral is, as in the Riemannian case, the difference between the area above the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis and the area below the <span class="texhtml mvar" style="font-style:italic;">x</span>-axis:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_E f \,d\mu = \int_E f^+ \,d\mu - \int_E f^- \,d\mu"></dd>
+</dl>
+<p>where</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ f^+(x)&amp;=\max(\{f(x),0\}) &amp;=&amp;\begin{cases}
+               f(x), &amp; \text{if } f(x) &gt; 0, \\
+               0, &amp; \text{otherwise,}
+             \end{cases}\\
+ f^-(x) &amp;=\max(\{-f(x),0\})&amp;=&amp; \begin{cases}
+               -f(x), &amp; \text{if } f(x) &lt; 0, \\
+               0, &amp; \text{otherwise.}
+             \end{cases}
+\end{align}"></dd>
+</dl>
+<h3><span class="mw-headline" id="Other_integrals">Other integrals</span></h3>
+<p>Although the Riemann and Lebesgue integrals are the most widely used definitions of the integral, a number of others exist, including:</p>
+<ul>
+<li>The <a href="Darboux_integral" title="Darboux integral">Darboux integral</a> which is equivalent to a <a href="Riemann_integral" title="Riemann integral">Riemann integral</a>, meaning that a function is Darboux-integrable if and only if it is Riemann-integrable, and the values of the two integrals, if they exist, are equal. Darboux integrals have the advantage of being simpler to define than Riemann integrals.</li>
+<li>The <a href="Riemann%E2%80%93Stieltjes_integral" title="Riemann–Stieltjes integral">Riemann–Stieltjes integral</a>, an extension of the Riemann integral.</li>
+<li>The <a href="Lebesgue%E2%80%93Stieltjes_integration" title="Lebesgue–Stieltjes integration">Lebesgue–Stieltjes integral</a>, further developed by <a href="Johann_Radon" title="Johann Radon">Johann Radon</a>, which generalizes the <a href="Riemann%E2%80%93Stieltjes_integral" title="Riemann–Stieltjes integral">Riemann–Stieltjes</a> and <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integrals</a>.</li>
+<li>The <a href="Daniell_integral" title="Daniell integral">Daniell integral</a>, which subsumes the <a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integral</a> and <a href="Lebesgue%E2%80%93Stieltjes_integration" title="Lebesgue–Stieltjes integration">Lebesgue–Stieltjes integral</a> without the dependence on <a href="Measure_(mathematics)" title="Measure (mathematics)">measures</a>.</li>
+<li>The <a href="Haar_integral" title="Haar integral" class="mw-redirect">Haar integral</a>, used for integration on locally compact topological groups, introduced by <a href="Alfr%C3%A9d_Haar" title="Alfréd Haar">Alfréd Haar</a> in 1933.</li>
+<li>The <a href="Henstock%E2%80%93Kurzweil_integral" title="Henstock–Kurzweil integral">Henstock–Kurzweil integral</a>, variously defined by <a href="Arnaud_Denjoy" title="Arnaud Denjoy">Arnaud Denjoy</a>, <a href="Oskar_Perron" title="Oskar Perron">Oskar Perron</a>, and (most elegantly, as the gauge integral) <a href="Jaroslav_Kurzweil" title="Jaroslav Kurzweil">Jaroslav Kurzweil</a>, and developed by <a href="Ralph_Henstock" title="Ralph Henstock">Ralph Henstock</a>.</li>
+<li>The <a href="It%C5%8D_calculus" title="Itō calculus">Itō integral</a> and <a href="Stratonovich_integral" title="Stratonovich integral">Stratonovich integral</a>, which define integration with respect to <a href="Semimartingale" title="Semimartingale">semimartingales</a> such as <a href="Wiener_process" title="Wiener process">Brownian motion</a>.</li>
+<li>The <a href="Young_integral" title="Young integral" class="mw-redirect">Young integral</a>, which is a kind of Riemann–Stieltjes integral with respect to certain functions of <a href="Bounded_variation" title="Bounded variation">unbounded variation</a>.</li>
+<li>The <a href="Rough_path" title="Rough path">rough path</a> integral defined for functions equipped with some additional "rough path" structure, generalizing stochastic integration against both <a href="Semimartingale" title="Semimartingale">semimartingales</a> and processes such as the <a href="Fractional_Brownian_motion" title="Fractional Brownian motion">fractional Brownian motion</a>.</li>
+</ul>
+<h2><span class="mw-headline" id="Properties">Properties</span></h2>
+<h3><span class="mw-headline" id="Linearity">Linearity</span></h3>
+<p>The collection of Riemann integrable functions on a closed interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> forms a <a href="Vector_space" title="Vector space">vector space</a> under the operations of <a href="Pointwise_addition" title="Pointwise addition" class="mw-redirect">pointwise addition</a> and multiplication by a scalar, and the operation of integration</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" f \mapsto \int_a^b f(x) \; dx"></dd>
+</dl>
+<p>is a <a href="Linear_functional" title="Linear functional" class="mw-redirect">linear functional</a> on this vector space. Thus, firstly, the collection of integrable functions is closed under taking <a href="Linear_combination" title="Linear combination">linear combinations</a>; and, secondly, the integral of a linear combination is the linear combination of the integrals,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b (\alpha f + \beta g)(x) \, dx = \alpha \int_a^b f(x) \,dx + \beta \int_a^b g(x) \, dx. \,"></dd>
+</dl>
+<p>Similarly, the set of <a href="Real_number" title="Real number">real</a>-valued Lebesgue integrable functions on a given <a href="Measure_(mathematics)" title="Measure (mathematics)">measure space</a> <span class="texhtml mvar" style="font-style:italic;">E</span> with measure <span class="texhtml mvar" style="font-style:italic;">μ</span> is closed under taking linear combinations and hence form a vector space, and the Lebesgue integral</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" f\mapsto \int_E f \, d\mu "></dd>
+</dl>
+<p>is a linear functional on this vector space, so that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_E (\alpha f + \beta g) \, d\mu = \alpha \int_E f \, d\mu + \beta \int_E g \, d\mu. "></dd>
+</dl>
+<p>More generally, consider the vector space of all <a href="Measurable_function" title="Measurable function">measurable functions</a> on a measure space <span class="texhtml">(<i>E</i>,<i>μ</i>)</span>, taking values in a <a href="Locally_compact_space" title="Locally compact space">locally compact</a> <a href="Complete_metric_space" title="Complete metric space">complete</a> <a href="Topological_vector_space" title="Topological vector space">topological vector space</a> <span class="texhtml mvar" style="font-style:italic;">V</span> over a locally compact <a href="Topological_ring" title="Topological ring">topological field</a> <span class="texhtml"><i>K</i>, <i>f</i> : <i>E</i> → <i>V</i></span>. Then one may define an abstract integration map assigning to each function <span class="texhtml mvar" style="font-style:italic;">f</span> an element of <span class="texhtml mvar" style="font-style:italic;">V</span> or the symbol <span class="texhtml"><i>∞</i></span>,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" f\mapsto\int_E f \,d\mu, \,"></dd>
+</dl>
+<p>that is compatible with linear combinations. In this situation the linearity holds for the subspace of functions whose integral is an element of <span class="texhtml mvar" style="font-style:italic;">V</span> (i.e. "finite"). The most important special cases arise when <span class="texhtml mvar" style="font-style:italic;">K</span> is <span class="texhtml"><b>R</b></span>, <span class="texhtml"><b>C</b></span>, or a finite extension of the field <span class="texhtml"><b>Q</b><sub><i>p</i></sub></span> of <a href="P-adic_number" title="P-adic number">p-adic numbers</a>, and <span class="texhtml mvar" style="font-style:italic;">V</span> is a finite-dimensional vector space over <span class="texhtml mvar" style="font-style:italic;">K</span>, and when <span class="texhtml"><i>K</i> = <b>C</b></span> and <span class="texhtml mvar" style="font-style:italic;">V</span> is a complex <a href="Hilbert_space" title="Hilbert space">Hilbert space</a>.</p>
+<p>Linearity, together with some natural continuity properties and normalisation for a certain class of "simple" functions, may be used to give an alternative definition of the integral. This is the approach of <a href="Daniell_integral" title="Daniell integral">Daniell</a> for the case of real-valued functions on a set <span class="texhtml mvar" style="font-style:italic;">X</span>, generalized by <a href="Nicolas_Bourbaki" title="Nicolas Bourbaki">Nicolas Bourbaki</a> to functions with values in a locally compact topological vector space. See (<a href="#CITEREFHildebrandt1953">Hildebrandt 1953</a>) for an axiomatic characterisation of the integral.</p>
+<h3><span class="mw-headline" id="Inequalities">Inequalities</span></h3>
+<p>A number of general inequalities hold for Riemann-integrable <a href="Function_(mathematics)" title="Function (mathematics)">functions</a> defined on a <a href="Closed_set" title="Closed set">closed</a> and <a href="Bounded_set" title="Bounded set">bounded</a> <a href="Interval_(mathematics)" title="Interval (mathematics)">interval</a> <span class="texhtml">[<i>a</i>, <i>b</i>]</span> and can be generalized to other notions of integral (Lebesgue and Daniell).</p>
+<ul>
+<li><i>Upper and lower bounds.</i> An integrable function <span class="texhtml mvar" style="font-style:italic;">f</span> on <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, is necessarily <a href="Bounded_function" title="Bounded function">bounded</a> on that interval. Thus there are <a href="Real_number" title="Real number">real numbers</a> <span class="texhtml mvar" style="font-style:italic;">m</span> and <span class="texhtml mvar" style="font-style:italic;">M</span> so that <span class="texhtml"><i>m</i> ≤ <i>f</i> (<i>x</i>) ≤ <i>M</i></span> for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span>. Since the lower and upper sums of <span class="texhtml mvar" style="font-style:italic;">f</span> over <span class="texhtml">[<i>a</i>, <i>b</i>]</span> are therefore bounded by, respectively, <span class="texhtml"><i>m</i>(<i>b</i> − <i>a</i>)</span> and <span class="texhtml"><i>M</i>(<i>b</i> − <i>a</i>)</span>, it follows that</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" m(b - a) \leq \int_a^b f(x) \, dx \leq M(b - a). "></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><i>Inequalities between functions.</i> If <span class="texhtml"><i>f</i>(<i>x</i>) ≤ <i>g</i>(<i>x</i>)</span> for each <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span> then each of the upper and lower sums of <span class="texhtml mvar" style="font-style:italic;">f</span> is bounded above by the upper and lower sums, respectively, of <span class="texhtml mvar" style="font-style:italic;">g</span>. Thus</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b f(x) \, dx \leq \int_a^b g(x) \, dx. "></dd>
+</dl>
+</dd>
+<dd>This is a generalization of the above inequalities, as <span class="texhtml"><i>M</i>(<i>b</i> − <i>a</i>)</span> is the integral of the constant function with value <span class="texhtml mvar" style="font-style:italic;">M</span> over <span class="texhtml">[<i>a</i>, <i>b</i>]</span>.</dd>
+<dd>In addition, if the inequality between functions is strict, then the inequality between integrals is also strict. That is, if <span class="texhtml"><i>f</i>(<i>x</i>) &lt; <i>g</i>(<i>x</i>)</span> for each <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, then
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b f(x) \, dx &lt; \int_a^b g(x) \, dx. "></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><i>Subintervals.</i> If <span class="texhtml">[<i>c</i>, <i>d</i>]</span> is a subinterval of <span class="texhtml">[<i>a</i>, <i>b</i>]</span> and <span class="texhtml"><i>f</i>(<i>x</i>)</span> is non-negative for all <span class="texhtml mvar" style="font-style:italic;">x</span>, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_c^d f(x) \, dx \leq \int_a^b f(x) \, dx. "></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li><i>Products and absolute values of functions.</i> If <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">g</span> are two functions then we may consider their <a href="Pointwise_product" title="Pointwise product">pointwise products</a> and powers, and <a href="Absolute_value" title="Absolute value">absolute values</a>:</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="
+ (fg)(x)= f(x) g(x), \; f^2 (x) = (f(x))^2, \; |f| (x) = |f(x)|.\,"></dd>
+</dl>
+</dd>
+<dd>If <span class="texhtml mvar" style="font-style:italic;">f</span> is Riemann-integrable on <span class="texhtml">[<i>a</i>, <i>b</i>]</span> then the same is true for <span class="texhtml">|<i>f</i>|</span>, and
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left| \int_a^b f(x) \, dx \right| \leq \int_a^b | f(x) | \, dx. "></dd>
+</dl>
+</dd>
+<dd>Moreover, if <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">g</span> are both Riemann-integrable then <span class="texhtml"><i>fg</i></span> is also Riemann-integrable, and
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left( \int_a^b (fg)(x) \, dx \right)^2 \leq \left( \int_a^b f(x)^2 \, dx \right) \left( \int_a^b g(x)^2 \, dx \right). "></dd>
+</dl>
+</dd>
+<dd>This inequality, known as the <a href="Cauchy%E2%80%93Schwarz_inequality" title="Cauchy–Schwarz inequality">Cauchy–Schwarz inequality</a>, plays a prominent role in <a href="Hilbert_space" title="Hilbert space">Hilbert space</a> theory, where the left hand side is interpreted as the <a href="Inner_product_space" title="Inner product space">inner product</a> of two <a href="Square-integrable_function" title="Square-integrable function">square-integrable</a> functions <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">g</span> on the interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span>.</dd>
+</dl>
+<ul>
+<li><i>Hölder's inequality.</i> Suppose that <span class="texhtml mvar" style="font-style:italic;">p</span> and <span class="texhtml mvar" style="font-style:italic;">q</span> are two real numbers, <span class="texhtml">1 ≤ <i>p</i>, <i>q</i> ≤ ∞</span> with <span class="texhtml"><span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; padding:0 0.1em;">1</span><span class="visualhide">/</span><span style="display:block; line-height:1em; padding:0 0.1em; border-top:1px solid;"><i>p</i></span></span> + <span class="sfrac nowrap" style="display:inline-block; vertical-align:-0.5em; font-size:85%; text-align:center;"><span style="display:block; line-height:1em; padding:0 0.1em;">1</span><span class="visualhide">/</span><span style="display:block; line-height:1em; padding:0 0.1em; border-top:1px solid;"><i>q</i></span></span> = 1</span>, and <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">g</span> are two Riemann-integrable functions. Then the functions <span class="texhtml">|<i>f</i>|<sup><i>p</i></sup></span> and <span class="texhtml">|<i>g</i>|<sup><i>q</i></sup></span> are also integrable and the following <a href="H%C3%B6lder%27s_inequality" title="Hölder's inequality">Hölder's inequality</a> holds:</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left|\int f(x)g(x)\,dx\right| \leq
+\left(\int \left|f(x)\right|^p\,dx \right)^{1/p} \left(\int\left|g(x)\right|^q\,dx\right)^{1/q}."></dd>
+<dd>For <span class="texhtml mvar" style="font-style:italic;">p</span> = <span class="texhtml mvar" style="font-style:italic;">q</span> = 2, Hölder's inequality becomes the Cauchy–Schwarz inequality.</dd>
+</dl>
+<ul>
+<li><i>Minkowski inequality</i>. Suppose that <span class="texhtml"><i>p</i> ≥ 1</span> is a real number and <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">g</span> are Riemann-integrable functions. Then <span class="texhtml">| <i>f</i> |<sup><i>p</i></sup>, | <i>g</i> |<sup><i>p</i></sup></span> and <span class="texhtml">| <i>f</i> + <i>g</i> |<sup><i>p</i></sup></span> are also Riemann integrable and the following <a href="Minkowski_inequality" title="Minkowski inequality">Minkowski inequality</a> holds:</li>
+</ul>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\left(\int \left|f(x)+g(x)\right|^p\,dx \right)^{1/p} \leq
+\left(\int \left|f(x)\right|^p\,dx \right)^{1/p} +
+\left(\int \left|g(x)\right|^p\,dx \right)^{1/p}."></dd>
+<dd>An analogue of this inequality for Lebesgue integral is used in construction of <a href="Lp_space" title="Lp space">L<sup>p</sup> spaces</a>.</dd>
+</dl>
+<h3><span class="mw-headline" id="Conventions">Conventions</span></h3>
+<p>In this section <span class="texhtml mvar" style="font-style:italic;">f</span> is a <a href="Real_number" title="Real number">real-valued</a> Riemann-integrable <a href="Function_(mathematics)" title="Function (mathematics)">function</a>. The integral</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b f(x) \, dx "></dd>
+</dl>
+<p>over an interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> is defined if <span class="texhtml"><i>a</i> &lt; <i>b</i></span>. This means that the upper and lower sums of the function <span class="texhtml mvar" style="font-style:italic;">f</span> are evaluated on a partition <span class="texhtml"><i>a</i> = <i>x</i><sub>0</sub> ≤ <i>x</i><sub>1</sub> ≤ . . . ≤ <i>x</i><sub><i>n</i></sub> = <i>b</i></span> whose values <span class="texhtml"><i>x</i><sub><i>i</i></sub></span> are increasing. Geometrically, this signifies that integration takes place "left to right", evaluating <span class="texhtml mvar" style="font-style:italic;">f</span> within intervals <span class="texhtml">[<i>x</i><sub> <i>i</i></sub> , <i>x</i><sub> <i>i</i> +1</sub>]</span> where an interval with a higher index lies to the right of one with a lower index. The values <span class="texhtml mvar" style="font-style:italic;">a</span> and <span class="texhtml mvar" style="font-style:italic;">b</span>, the end-points of the <a href="Interval_(mathematics)" title="Interval (mathematics)">interval</a>, are called the <a href="Limits_of_integration" title="Limits of integration">limits of integration</a> of <span class="texhtml mvar" style="font-style:italic;">f</span>. Integrals can also be defined if <span class="texhtml"><i>a</i> &gt; <i>b</i></span>:</p>
+<ul>
+<li><i>Reversing limits of integration.</i> If <span class="texhtml"><i>a</i> &gt; <i>b</i></span> then define</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_a^b f(x) \, dx = - \int_b^a f(x) \, dx. "></dd>
+</dl>
+</dd>
+</dl>
+<p>This, with <span class="texhtml"><i>a</i> = <i>b</i></span>, implies:</p>
+<ul>
+<li><i>Integrals over intervals of length zero.</i> If <span class="texhtml mvar" style="font-style:italic;">a</span> is a <a href="Real_number" title="Real number">real number</a> then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_a^a f(x) \, dx = 0. "></dd>
+</dl>
+</dd>
+</dl>
+<p>The first convention is necessary in consideration of taking integrals over subintervals of <span class="texhtml">[<i>a</i>, <i>b</i>]</span>; the second says that an integral taken over a degenerate interval, or a <a href="Point_(geometry)" title="Point (geometry)">point</a>, should be <a href="0_(number)" title="0 (number)">zero</a>. One reason for the first convention is that the integrability of <span class="texhtml mvar" style="font-style:italic;">f</span> on an interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span> implies that <span class="texhtml mvar" style="font-style:italic;">f</span> is integrable on any subinterval <span class="texhtml">[<i>c</i>, <i>d</i>]</span>, but in particular integrals have the property that:</p>
+<ul>
+<li><i>Additivity of integration on intervals.</i> If <span class="texhtml mvar" style="font-style:italic;">c</span> is any <a href="Element_(mathematics)" title="Element (mathematics)">element</a> of <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx."></dd>
+</dl>
+</dd>
+</dl>
+<p>With the first convention the resulting relation</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ \int_a^c f(x) \, dx &{}= \int_a^b f(x) \, dx - \int_c^b f(x) \, dx \\
+ &{} = \int_a^b f(x) \, dx + \int_b^c f(x) \, dx
+\end{align}"></dd>
+</dl>
+<p>is then well-defined for any cyclic permutation of <span class="texhtml mvar" style="font-style:italic;">a</span>, <span class="texhtml mvar" style="font-style:italic;">b</span>, and <span class="texhtml mvar" style="font-style:italic;">c</span>.</p>
+<p>Instead of viewing the above as conventions, one can also adopt the point of view that integration is performed of differential forms on <a href="Orientability" title="Orientability"><i>oriented</i> manifolds</a> only. If <span class="texhtml mvar" style="font-style:italic;">M</span> is such an oriented <span class="texhtml mvar" style="font-style:italic;">m</span>-dimensional manifold, and <span class="texhtml"><i>M</i>′</span> is the same manifold with opposed orientation and <span class="texhtml mvar" style="font-style:italic;">ω</span> is an <span class="texhtml mvar" style="font-style:italic;">m</span>-form, then one has:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_M \omega = - \int_{M'} \omega \,."></dd>
+</dl>
+<p>These conventions correspond to interpreting the integrand as a differential form, integrated over a <a href="Chain_(algebraic_topology)" title="Chain (algebraic topology)">chain</a>. In <a href="Measure_theory" title="Measure theory" class="mw-redirect">measure theory</a>, by contrast, one interprets the integrand as a function <span class="texhtml mvar" style="font-style:italic;">f</span> with respect to a measure <span class="texhtml mvar" style="font-style:italic;">μ</span> and integrates over a subset <span class="texhtml mvar" style="font-style:italic;">A</span>, without any notion of orientation; one writes <img class="mwe-math-fallback-image-inline tex" alt="\textstyle{\int_A f\,d\mu = \int_{[a,b]} f\,d\mu}"> to indicate integration over a subset <span class="texhtml mvar" style="font-style:italic;">A</span>. This is a minor distinction in one dimension, but becomes subtler on higher-dimensional manifolds; see <a href="Differential_form#Relation_with_measures" title="Differential form">Differential form: Relation with measures</a> for details.</p>
+<h2><span class="mw-headline" id="Fundamental_theorem_of_calculus">Fundamental theorem of calculus</span></h2>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">Fundamental theorem of calculus</a></div>
+<p>The <i>fundamental theorem of calculus</i> is the statement that <a href="Derivative" title="Derivative">differentiation</a> and integration are inverse operations: if a <a href="Continuous_function" title="Continuous function">continuous function</a> is first integrated and then differentiated, the original function is retrieved. An important consequence, sometimes called the <i>second fundamental theorem of calculus</i>, allows one to compute integrals by using an antiderivative of the function to be integrated.</p>
+<h3><span class="mw-headline" id="Statements_of_theorems">Statements of theorems</span></h3>
+<h4><span class="mw-headline" id="Fundamental_theorem_of_calculus_2">Fundamental theorem of calculus</span></h4>
+<p>Let <span class="texhtml mvar" style="font-style:italic;">f</span> be a continuous real-valued function defined on a <a href="Interval_(mathematics)#Terminology" title="Interval (mathematics)">closed interval</a> <span class="texhtml">[<i>a</i>, <i>b</i>]</span>. Let <span class="texhtml mvar" style="font-style:italic;">F</span> be the function defined, for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, by</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F(x) = \int_a^x f(t)\, dt."></dd>
+</dl>
+<p>Then, <span class="texhtml mvar" style="font-style:italic;">F</span> is continuous on <span class="texhtml">[<i>a</i>, <i>b</i>]</span>, differentiable on the open interval <span class="texhtml">(<i>a</i>, <i>b</i>)</span>, and</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F'(x) = f(x)"></dd>
+</dl>
+<p>for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">(<i>a</i>, <i>b</i>)</span>.</p>
+<h4><span class="mw-headline" id="Second_fundamental_theorem_of_calculus">Second fundamental theorem of calculus</span></h4>
+<p>Let <span class="texhtml mvar" style="font-style:italic;">f</span> be a real-valued function defined on a <a href="Closed_interval" title="Closed interval" class="mw-redirect">closed interval</a> <span class="texhtml mvar" style="font-style:italic;">[<i>a</i>, <i>b</i>]</span> that admits an <a href="Antiderivative" title="Antiderivative">antiderivative</a> <span class="texhtml mvar" style="font-style:italic;">F</span> on <span class="texhtml">[<i>a</i>, <i>b</i>]</span>. That is, <span class="texhtml mvar" style="font-style:italic;">f</span> and <span class="texhtml mvar" style="font-style:italic;">F</span> are functions such that for all <span class="texhtml mvar" style="font-style:italic;">x</span> in <span class="texhtml">[<i>a</i>, <i>b</i>]</span>,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="f(x) = F'(x)."></dd>
+</dl>
+<p>If <span class="texhtml mvar" style="font-style:italic;">f</span> is integrable on <span class="texhtml">[<i>a</i>, <i>b</i>]</span> then</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_a^b f(x)\,dx = F(b) - F(a)."></dd>
+</dl>
+<h2><span class="mw-headline" id="Extensions">Extensions</span></h2>
+<h3><span class="mw-headline" id="Improper_integrals">Improper integrals</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Improper_integral" title="Improper integral">Improper integral</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Improper_integral.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Improper_integral.svg/220px-Improper_integral.svg.png" width="220" height="220" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Improper_integral.svg/330px-Improper_integral.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Improper_integral.svg/440px-Improper_integral.svg.png 2x" data-file-width="420" data-file-height="420"></a>
+<div class="thumbcaption">
+
+The <a href="Improper_integral" title="Improper integral">improper integral</a><br>
+<img class="mwe-math-fallback-image-inline tex" alt="\int_{0}^{\infty} \frac{dx}{(x+1)\sqrt{x}} = \pi"><br>
+has unbounded intervals for both domain and range.</div>
+</div>
+</div>
+<p>A "proper" Riemann integral assumes the integrand is defined and finite on a closed and bounded interval, bracketed by the limits of integration. An improper integral occurs when one or more of these conditions is not satisfied. In some cases such integrals may be defined by considering the <a href="Limit_(mathematics)" title="Limit (mathematics)">limit</a> of a <a href="Sequence" title="Sequence">sequence</a> of proper <a href="Riemann_integral" title="Riemann integral">Riemann integrals</a> on progressively larger intervals.</p>
+<p>If the interval is unbounded, for instance at its upper end, then the improper integral is the limit as that endpoint goes to infinity.</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_{a}^{\infty} f(x)\,dx = \lim_{b \to \infty} \int_{a}^{b} f(x)\,dx"></dd>
+</dl>
+<p>If the integrand is only defined or finite on a half-open interval, for instance <span class="texhtml">(<i>a</i>, <i>b</i>]</span>, then again a limit may provide a finite result.</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_{a}^{b} f(x)\,dx = \lim_{\epsilon \to 0} \int_{a+\epsilon}^{b} f(x)\,dx"></dd>
+</dl>
+<p>That is, the improper integral is the <a href="Limit_(mathematics)" title="Limit (mathematics)">limit</a> of proper integrals as one endpoint of the interval of integration approaches either a specified <a href="Real_number" title="Real number">real number</a>, or <span class="texhtml">∞</span>, or <span class="texhtml">−∞</span>. In more complicated cases, limits are required at both endpoints, or at interior points.</p>
+<p>Consider, for example, the function <span class="texhtml">1/((<i>x</i> + 1)<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>x</i></span></span>)</span> integrated from 0 to <span class="texhtml">∞</span> (shown right). At the lower bound, as <span class="texhtml mvar" style="font-style:italic;">x</span> goes to 0 the function goes to <span class="texhtml">∞</span>, and the upper bound is itself <span class="texhtml">∞</span>, though the function goes to 0. Thus this is a doubly improper integral. Integrated, say, from 1 to 3, an ordinary Riemann sum suffices to produce a result of <span class="texhtml">π</span>/6. To integrate from 1 to <span class="texhtml">∞</span>, a Riemann sum is not possible. However, any finite upper bound, say <span class="texhtml mvar" style="font-style:italic;">t</span> (with <span class="texhtml"><i>t</i> &gt; 1</span>), gives a well-defined result, <span class="texhtml">2 arctan(<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>t</i></span></span>) − <span class="texhtml">π</span>/2</span>. This has a finite limit as <span class="texhtml mvar" style="font-style:italic;">t</span> goes to infinity, namely <span class="texhtml">π</span>/2. Similarly, the integral from 1/3 to 1 allows a Riemann sum as well, coincidentally again producing <span class="texhtml">π</span>/6. Replacing 1/3 by an arbitrary positive value <span class="texhtml mvar" style="font-style:italic;">s</span> (with <span class="texhtml"><i>s</i> &lt; 1</span>) is equally safe, giving <span class="texhtml"><span class="texhtml">π</span>/2 − 2 arctan(<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>s</i></span></span>)</span>. This, too, has a finite limit as <span class="texhtml mvar" style="font-style:italic;">s</span> goes to zero, namely <span class="texhtml">π</span>/2. Combining the limits of the two fragments, the result of this improper integral is</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ \int_{0}^{\infty} \frac{dx}{(x+1)\sqrt{x}} &{} = \lim_{s \to 0} \int_{s}^{1} \frac{dx}{(x+1)\sqrt{x}}
+   + \lim_{t \to \infty} \int_{1}^{t} \frac{dx}{(x+1)\sqrt{x}} \\
+  &{} = \lim_{s \to 0} \left(\frac{\pi}{2} - 2 \arctan{\sqrt{s}} \right)
+   + \lim_{t \to \infty} \left(2 \arctan{\sqrt{t}} - \frac{\pi}{2} \right) \\
+  &{} = \frac{\pi}{2} + \left(\pi - \frac{\pi}{2} \right) \\
+  &{} = \frac{\pi}{2} + \frac{\pi}{2} \\
+  &{} = \pi .
+\end{align}"></dd>
+</dl>
+<p>This process does not guarantee success; a limit might fail to exist, or might be unbounded. For example, over the bounded interval from 0 to 1 the integral of 1/<span class="texhtml mvar" style="font-style:italic;">x</span> does not converge; and over the unbounded interval from 1 to <span class="texhtml">∞</span> the integral of 1/<span class="texhtml"><span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>x</i></span></span></span> does not converge.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Improper_integral_unbounded_internally.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Improper_integral_unbounded_internally.svg/220px-Improper_integral_unbounded_internally.svg.png" width="220" height="220" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Improper_integral_unbounded_internally.svg/330px-Improper_integral_unbounded_internally.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Improper_integral_unbounded_internally.svg/440px-Improper_integral_unbounded_internally.svg.png 2x" data-file-width="420" data-file-height="420"></a>
+<div class="thumbcaption">
+
+The <a href="Improper_integral" title="Improper integral">improper integral</a><br>
+<img class="mwe-math-fallback-image-inline tex" alt="\int_{-1}^{1} \frac{dx}{\sqrt[3]{x^2}} = 6"><br>
+is unbounded internally, but both left and right limits exist.</div>
+</div>
+</div>
+<p>It might also happen that an integrand is unbounded at an interior point, in which case the integral must be split at that point. For the integral as a whole to converge, the limit integrals on both sides must exist and must be bounded. For example:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\begin{align}
+ \int_{-1}^{1} \frac{dx}{\sqrt[3]{x^2}} &{} = \lim_{s \to 0} \int_{-1}^{-s} \frac{dx}{\sqrt[3]{x^2}}
+   + \lim_{t \to 0} \int_{t}^{1} \frac{dx}{\sqrt[3]{x^2}} \\
+  &{} = \lim_{s \to 0} 3(1-\sqrt[3]{s}) + \lim_{t \to 0} 3(1-\sqrt[3]{t}) \\
+  &{} = 3 + 3 \\
+  &{} = 6.
+\end{align}"></dd>
+</dl>
+<p>But the similar integral</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_{-1}^{1} \frac{dx}{x} \,\!"></dd>
+</dl>
+<p>cannot be assigned a value in this way, as the integrals above and below zero do not independently converge. (However, see <a href="Cauchy_principal_value" title="Cauchy principal value">Cauchy principal value</a>.)</p>
+<h3><span class="mw-headline" id="Multiple_integration">Multiple integration</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Multiple_integral" title="Multiple integral">Multiple integral</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Volume_under_surface.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Volume_under_surface.png/220px-Volume_under_surface.png" width="220" height="264" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Volume_under_surface.png/330px-Volume_under_surface.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Volume_under_surface.png/440px-Volume_under_surface.png 2x" data-file-width="636" data-file-height="762"></a>
+<div class="thumbcaption">
+
+Double integral as volume under a surface.</div>
+</div>
+</div>
+<p>Integrals can be taken over regions other than intervals. In general, an integral over a <a href="Set_(mathematics)" title="Set (mathematics)">set</a> <span class="texhtml mvar" style="font-style:italic;">E</span> of a function <span class="texhtml mvar" style="font-style:italic;">f</span> is written:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_E f(x) \, dx."></dd>
+</dl>
+<p>Here <span class="texhtml mvar" style="font-style:italic;">x</span> need not be a real number, but can be another suitable quantity, for instance, a <a href="Vector_(geometric)" title="Vector (geometric)" class="mw-redirect">vector</a> in <span class="texhtml"><b>R</b><sup>3</sup></span>. <a href="Fubini%27s_theorem" title="Fubini's theorem">Fubini's theorem</a> shows that such integrals can be rewritten as an <i><a href="Multiple_integral" title="Multiple integral">iterated integral</a></i>. In other words, the integral can be calculated by integrating one coordinate at a time.</p>
+<p>Just as the definite integral of a positive function of one variable represents the <a href="Area" title="Area">area</a> of the region between the graph of the function and the <i>x</i>-axis, the <i>double integral</i> of a positive function of two variables represents the <a href="Volume" title="Volume">volume</a> of the region between the surface defined by the function and the plane which contains its <a href="Domain_(mathematics)" title="Domain (mathematics)" class="mw-redirect">domain</a>. (The same volume can be obtained via the <i>triple integral</i> — the integral of a function in three variables — of the constant function <span class="texhtml"><i>f</i>(<i>x</i>, <i>y</i>, <i>z</i>) = 1</span> over the above-mentioned region between the surface and the plane.) If the number of variables is higher, then the integral represents a <a href="Four-dimensional_space" title="Four-dimensional space">hypervolume</a>, a volume of a solid of more than three dimensions that cannot be graphed.</p>
+<p>For example, the volume of the <a href="Cuboid" title="Cuboid">cuboid</a> of sides 4 × 6 × 5 may be obtained in two ways:</p>
+<ul>
+<li>By the double integral</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\iint_D 5 \ dx\, dy"></dd>
+</dl>
+</dd>
+<dd>of the function <span class="texhtml"><i>f</i>(<i>x</i>, <i>y</i>) = 5</span> calculated in the region <span class="texhtml mvar" style="font-style:italic;">D</span> in the <i>xy</i>-plane which is the base of the cuboid. For example, if a rectangular base of such a cuboid is given via the <span class="texhtml"><i>xy</i></span> inequalities <span class="texhtml">3 ≤ <i>x</i> ≤ 7, 4 ≤ <i>y</i> ≤ 10</span>, our above double integral now reads</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_4^{10}\left[ \int_3^7 \ 5 \ dx\right] dy."></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>From here, integration is conducted with respect to either <span class="texhtml mvar" style="font-style:italic;">x</span> or <span class="texhtml mvar" style="font-style:italic;">y</span> first; in this example, integration is first done with respect to <span class="texhtml mvar" style="font-style:italic;">x</span> as the interval corresponding to <span class="texhtml mvar" style="font-style:italic;">x</span> is the inner integral. Once the first integration is completed via the <span class="texhtml"><i>F</i>(<i>b</i>) − <i>F</i>(<i>a</i>)</span> method or otherwise, the result is again integrated with respect to the other variable. The result will equate to the volume under the surface.</dd>
+</dl>
+<ul>
+<li>By the triple integral</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\iiint_\text{cuboid} 1 \, dx\, dy\, dz"></dd>
+</dl>
+</dd>
+<dd>of the constant function <span class="texhtml">1</span> calculated on the cuboid itself.</dd>
+</dl>
+<h3><span class="mw-headline" id="Line_integrals">Line integrals</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Line_integral" title="Line integral">Line integral</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Line-Integral.gif" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Line-Integral.gif/220px-Line-Integral.gif" width="220" height="202" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/d/d8/Line-Integral.gif 1.5x, http://upload.wikimedia.org/wikipedia/commons/d/d8/Line-Integral.gif 2x" data-file-width="300" data-file-height="275"></a>
+<div class="thumbcaption">
+
+A line integral sums together elements along a curve.</div>
+</div>
+</div>
+<p>The concept of an integral can be extended to more general domains of integration, such as curved lines and surfaces. Such integrals are known as line integrals and surface integrals respectively. These have important applications in physics, as when dealing with <a href="Vector_field" title="Vector field">vector fields</a>.</p>
+<p>A <i>line integral</i> (sometimes called a <i>path integral</i>) is an integral where the <a href="Function_(mathematics)" title="Function (mathematics)">function</a> to be integrated is evaluated along a <a href="Curve" title="Curve">curve</a>. Various different line integrals are in use. In the case of a closed curve it is also called a <i>contour integral</i>.</p>
+<p>The function to be integrated may be a <a href="Scalar_field" title="Scalar field">scalar field</a> or a <a href="Vector_field" title="Vector field">vector field</a>. The value of the line integral is the sum of values of the field at all points on the curve, weighted by some scalar function on the curve (commonly <a href="Arc_length" title="Arc length">arc length</a> or, for a vector field, the <a href="Inner_product_space" title="Inner product space">scalar product</a> of the vector field with a <a href="Differential_(infinitesimal)" title="Differential (infinitesimal)">differential</a> vector in the curve). This weighting distinguishes the line integral from simpler integrals defined on <a href="Interval_(mathematics)" title="Interval (mathematics)">intervals</a>. Many simple formulas in physics have natural continuous analogs in terms of line integrals; for example, the fact that <a href="Mechanical_work" title="Mechanical work" class="mw-redirect">work</a> is equal to <a href="Force" title="Force">force</a>, <span class="texhtml"><b>F</b></span>, multiplied by displacement, <span class="texhtml"><b>s</b></span>, may be expressed (in terms of vector quantities) as:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="W=\mathbf F\cdot\mathbf s."></dd>
+</dl>
+<p>For an object moving along a path <span class="texhtml mvar" style="font-style:italic;"><i>C</i></span> in a <a href="Vector_field" title="Vector field">vector field</a> <span class="texhtml"><b>F</b></span> such as an <a href="Electric_field" title="Electric field">electric field</a> or <a href="Gravitational_field" title="Gravitational field">gravitational field</a>, the total work done by the field on the object is obtained by summing up the differential work done in moving from <span class="texhtml"><b>s</b></span> to <span class="texhtml"><b>s</b> + <i>d</i><b>s</b></span>. This gives the line integral</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="W=\int_C \mathbf F\cdot d\mathbf s."></dd>
+</dl>
+<h3><span class="mw-headline" id="Surface_integrals">Surface integrals</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Surface_integral" title="Surface integral">Surface integral</a></div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Surface_integral_illustration.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/220px-Surface_integral_illustration.svg.png" width="220" height="150" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/330px-Surface_integral_illustration.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Surface_integral_illustration.svg/440px-Surface_integral_illustration.svg.png 2x" data-file-width="512" data-file-height="348"></a>
+<div class="thumbcaption">
+
+The definition of surface integral relies on splitting the surface into small surface elements.</div>
+</div>
+</div>
+<p>A <i>surface integral</i> is a definite integral taken over a <a href="Surface" title="Surface">surface</a> (which may be a curved set in <a href="Space" title="Space">space</a>); it can be thought of as the <a href="Multiple_integral" title="Multiple integral">double integral</a> analog of the <a href="Line_integral" title="Line integral">line integral</a>. The function to be integrated may be a <a href="Scalar_field" title="Scalar field">scalar field</a> or a <a href="Vector_field" title="Vector field">vector field</a>. The value of the surface integral is the sum of the field at all points on the surface. This can be achieved by splitting the surface into surface elements, which provide the partitioning for Riemann sums.</p>
+<p>For an example of applications of surface integrals, consider a vector field <span class="texhtml"><b>v</b></span> on a surface <span class="texhtml"><i>S</i></span>; that is, for each point <span class="texhtml"><i>x</i></span> in <span class="texhtml"><i>S</i></span>, <span class="texhtml"><b>v</b>(<i>x</i>)</span> is a vector. Imagine that we have a fluid flowing through <span class="texhtml"><i>S</i></span>, such that <span class="texhtml"><b>v</b>(<i>x</i>)</span> determines the velocity of the fluid at <span class="texhtml mvar" style="font-style:italic;">x</span>. The <a href="Flux" title="Flux">flux</a> is defined as the quantity of fluid flowing through <span class="texhtml"><i>S</i></span> in unit amount of time. To find the flux, we need to take the <a href="Dot_product" title="Dot product">dot product</a> of <span class="texhtml"><b>v</b></span> with the unit <a href="Normal_(geometry)" title="Normal (geometry)">surface normal</a> to <span class="texhtml"><i>S</i></span> at each point, which will give us a scalar field, which we integrate over the surface:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_S {\mathbf v}\cdot \,d{\mathbf {S}}."></dd>
+</dl>
+<p>The fluid flux in this example may be from a physical fluid such as water or air, or from electrical or magnetic flux. Thus surface integrals have applications in <a href="Physics" title="Physics">physics</a>, particularly with the <a href="Classical_theory" title="Classical theory" class="mw-redirect">classical theory</a> of <a href="Electromagnetism" title="Electromagnetism">electromagnetism</a>.</p>
+<h3><span class="mw-headline" id="Integrals_of_differential_forms">Integrals of differential forms</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Differential_form" title="Differential form">differential form</a></div>
+<p>A <a href="Differential_form" title="Differential form">differential form</a> is a mathematical concept in the fields of <a href="Multivariable_calculus" title="Multivariable calculus">multivariable calculus</a>, <a href="Differential_topology" title="Differential topology">differential topology</a> and <a href="Tensor" title="Tensor">tensors</a>. The modern notation for the differential form, as well as the idea of the differential forms as being the <a href="Exterior_algebra" title="Exterior algebra">wedge products</a> of <a href="Exterior_derivative" title="Exterior derivative">exterior derivatives</a> forming an <a href="Exterior_algebra" title="Exterior algebra">exterior algebra</a>, was introduced by <a href="%C3%89lie_Cartan" title="Élie Cartan">Élie Cartan</a>.</p>
+<p>We initially work in an <a href="Open_set" title="Open set">open set</a> in <span class="texhtml"><b>R</b><sup><i>n</i></sup></span>. A 0-form is defined to be a <a href="Smooth_function" title="Smooth function" class="mw-redirect">smooth function</a> <span class="texhtml mvar" style="font-style:italic;">f</span>. When we integrate a <a href="Function_(mathematics)" title="Function (mathematics)">function</a> <span class="texhtml mvar" style="font-style:italic;">f</span> over an <span class="texhtml mvar" style="font-style:italic;">m</span>-<a href="Dimension" title="Dimension">dimensional</a> subspace <span class="texhtml"><i>S</i></span> of <span class="texhtml"><b>R</b><sup><i>n</i></sup></span>, we write it as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_S f\,dx^1 \ldots dx^m."></dd>
+</dl>
+<p>(The superscripts are indices, not exponents.) We can consider <span class="texhtml"><i>dx</i><sup>1</sup></span> through <span class="texhtml"><i>dx</i><sup><i>n</i></sup></span> to be formal objects themselves, rather than tags appended to make integrals look like <a href="Riemann_sum" title="Riemann sum">Riemann sums</a>. Alternatively, we can view them as <a href="One-form" title="One-form">covectors</a>, and thus a <a href="Measure_(mathematics)" title="Measure (mathematics)">measure</a> of "density" (hence integrable in a general sense). We call the <span class="texhtml"><i>dx</i><sup>1</sup>, …, <i>dx<sup>n</sup></i></span> <i>basic</i> <a href="One-form" title="One-form">1-<i>forms</i></a>.</p>
+<p>We define the <a href="Exterior_algebra" title="Exterior algebra">wedge product</a>, "<span class="texhtml">∧</span>", a bilinear "multiplication" operator on these elements, with the <i>alternating</i> property that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="dx^a \wedge dx^a = 0 \,\!"></dd>
+</dl>
+<p>for all indices <span class="texhtml mvar" style="font-style:italic;">a</span>. Alternation along with linearity and associativity implies <span class="texhtml"><i>dx</i><sup><i>b</i></sup> ∧ <i>dx</i><sup><i>a</i></sup> = −<i>dx</i><sup><i>a</i></sup> ∧ <i>dx</i><sup><i>b</i></sup></span>. This also ensures that the result of the wedge product has an <a href="Orientation_(mathematics)" title="Orientation (mathematics)" class="mw-redirect">orientation</a>.</p>
+<p>We define the set of all these products to be <i>basic</i> 2-<i>forms</i>, and similarly we define the set of products of the form <span class="texhtml"><i>dx</i><sup><i>a</i></sup> ∧ <i>dx</i><sup><i>b</i></sup> ∧ <i>dx</i><sup><i>c</i></sup></span> to be <i>basic</i> 3-<i>forms</i>. A general <i>k</i>-form is then a weighted sum of basic <i>k-</i>forms, where the weights are the smooth functions <span class="texhtml mvar" style="font-style:italic;">f</span>. Together these form a <a href="Vector_space" title="Vector space">vector space</a> with basic <i>k</i>-forms as the basis vectors, and 0-forms (smooth functions) as the field of scalars. The wedge product then extends to <i>k</i>-forms in the natural way. Over <span class="texhtml"><b>R</b><sup><i>n</i></sup></span> at most <span class="texhtml mvar" style="font-style:italic;">n</span> covectors can be linearly independent, thus a <i>k-</i>form with <span class="texhtml"><i>k</i> &gt; <i>n</i></span> will always be zero, by the alternating property.</p>
+<p>In addition to the wedge product, there is also the <a href="Exterior_derivative" title="Exterior derivative">exterior derivative</a> operator <span class="texhtml"><i>d</i></span>. This operator maps <i>k</i>-forms to (<i>k</i>+1)-forms. For a <i>k</i>-form <span class="texhtml">ω = <i>f</i> <i>dx<sup>a</sup></i></span> over <span class="texhtml"><b>R</b><sup><i>n</i></sup></span>, we define the action of <span class="texhtml"><i>d</i></span> by:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="d\omega = \sum_{i=1}^n \frac{\partial f}{\partial x_i} dx^i \wedge dx^a."></dd>
+</dl>
+<p>with extension to general <i>k</i>-forms occurring linearly.</p>
+<p>This more general approach allows for a more natural coordinate-free approach to integration on <a href="Manifold" title="Manifold">manifolds</a>. It also allows for a natural generalisation of the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>, called <a href="Stokes%27_theorem" title="Stokes' theorem">Stokes' theorem</a>, which we may state as</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_{\Omega} d\omega = \int_{\partial\Omega} \omega \,\!"></dd>
+</dl>
+<p>where <span class="texhtml">ω</span> is a general <i>k</i>-form, and <span class="texhtml">∂Ω</span> denotes the <a href="Boundary_(topology)" title="Boundary (topology)">boundary</a> of the region <span class="texhtml">Ω</span>. Thus, in the case that <span class="texhtml">ω</span> is a 0-form and <span class="texhtml">Ω</span> is a closed interval of the real line, this reduces to the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>. In the case that <span class="texhtml">ω</span> is a 1-form and <span class="texhtml">Ω</span> is a two-dimensional region in the plane, the theorem reduces to <a href="Green%27s_theorem" title="Green's theorem">Green's theorem</a>. Similarly, using 2-forms, and 3-forms and <a href="Hodge_dual" title="Hodge dual">Hodge duality</a>, we can arrive at <a href="Stokes%27_theorem" title="Stokes' theorem">Stokes' theorem</a> and the <a href="Divergence_theorem" title="Divergence theorem">divergence theorem</a>. In this way we can see that differential forms provide a powerful unifying view of integration.</p>
+<h3><span class="mw-headline" id="Summations">Summations</span></h3>
+<p>The discrete equivalent of integration is <a href="Summation" title="Summation">summation</a>. Summations and integrals can be put on the same foundations using the theory of <a href="Lebesgue_integral" title="Lebesgue integral" class="mw-redirect">Lebesgue integrals</a> or <a href="Time_scale_calculus" title="Time scale calculus" class="mw-redirect">time scale calculus</a>.</p>
+<h2><span class="mw-headline" id="Computation">Computation</span></h2>
+<h3><span class="mw-headline" id="Analytical">Analytical</span></h3>
+<p>The most basic technique for computing definite integrals of one real variable is based on the <a href="Fundamental_theorem_of_calculus" title="Fundamental theorem of calculus">fundamental theorem of calculus</a>. Let <span class="texhtml"><i>f</i>(<i>x</i>)</span> be the function of <span class="texhtml mvar" style="font-style:italic;">x</span> to be integrated over a given interval <span class="texhtml">[<i>a</i>, <i>b</i>]</span>. Then, find an antiderivative of <span class="texhtml mvar" style="font-style:italic;">f</span>; that is, a function <span class="texhtml mvar" style="font-style:italic;">F</span> such that <span class="texhtml"><i>F</i>′ = <i>f</i></span> on the interval. Provided the integrand and integral have no <a href="Mathematical_singularity" title="Mathematical singularity" class="mw-redirect">singularities</a> on the path of integration, by the fundamental theorem of calculus,</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\textstyle\int_a^b f(x)\,dx = F(b)-F(a)."></dd>
+</dl>
+<p>The integral is not actually the antiderivative, but the fundamental theorem provides a way to use antiderivatives to evaluate definite integrals.</p>
+<p>The most difficult step is usually to find the antiderivative of <span class="texhtml mvar" style="font-style:italic;">f</span>. It is rarely possible to glance at a function and write down its antiderivative. More often, it is necessary to use one of the many techniques that have been developed to evaluate integrals. Most of these techniques rewrite one integral as a different one which is hopefully more tractable. Techniques include:</p>
+<ul>
+<li><a href="Integration_by_substitution" title="Integration by substitution">Integration by substitution</a></li>
+<li><a href="Integration_by_parts" title="Integration by parts">Integration by parts</a></li>
+<li><a href="Inverse_function_integration" title="Inverse function integration" class="mw-redirect">Inverse function integration</a></li>
+<li><a href="Order_of_integration_(calculus)" title="Order of integration (calculus)">Changing the order of integration</a></li>
+<li><a href="Trigonometric_substitution" title="Trigonometric substitution">Integration by trigonometric substitution</a></li>
+<li><a href="Tangent_half-angle_substitution" title="Tangent half-angle substitution">Tangent half-angle substitution</a></li>
+<li><a href="Partial_fractions_in_integration" title="Partial fractions in integration" class="mw-redirect">Integration by partial fractions</a></li>
+<li><a href="Integration_by_reduction_formulae" title="Integration by reduction formulae">Integration by reduction formulae</a></li>
+<li><a href="Integration_using_parametric_derivatives" title="Integration using parametric derivatives">Integration using parametric derivatives</a></li>
+<li><a href="Integration_using_Euler%27s_formula" title="Integration using Euler's formula">Integration using Euler's formula</a></li>
+<li><a href="Euler_substitution" title="Euler substitution">Euler substitution</a></li>
+<li><a href="Differentiation_under_the_integral_sign" title="Differentiation under the integral sign">Differentiation under the integral sign</a></li>
+<li><a href="Methods_of_contour_integration" title="Methods of contour integration">Contour integration</a></li>
+</ul>
+<p>Alternative methods exist to compute more complex integrals. Many <a href="Nonelementary_integral" title="Nonelementary integral">nonelementary integrals</a> can be expanded in a <a href="Taylor_series" title="Taylor series">Taylor series</a> and integrated term by term. Occasionally, the resulting infinite series can be summed analytically. The method of convolution using <a href="Meijer_G-function" title="Meijer G-function">Meijer G-functions</a> can also be used, assuming that the integrand can be written as a product of Meijer G-functions. There are also many less common ways of calculating definite integrals; for instance, <a href="Parseval%27s_identity" title="Parseval's identity">Parseval's identity</a> can be used to transform an integral over a rectangular region into an infinite sum. Occasionally, an integral can be evaluated by a trick; for an example of this, see <a href="Gaussian_integral" title="Gaussian integral">Gaussian integral</a>.</p>
+<p>Computations of volumes of <a href="Solid_of_revolution" title="Solid of revolution">solids of revolution</a> can usually be done with <a href="Disk_integration" title="Disk integration" class="mw-redirect">disk integration</a> or <a href="Shell_integration" title="Shell integration">shell integration</a>.</p>
+<p>Specific results which have been worked out by various techniques are collected in the <a href="Lists_of_integrals" title="Lists of integrals">list of integrals</a>.</p>
+<h3><span class="mw-headline" id="Symbolic">Symbolic</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Symbolic_integration" title="Symbolic integration">Symbolic integration</a></div>
+<p>Many problems in mathematics, physics, and engineering involve integration where an explicit formula for the integral is desired. Extensive <a href="Lists_of_integrals" title="Lists of integrals">tables of integrals</a> have been compiled and published over the years for this purpose. With the spread of <a href="Computer" title="Computer">computers</a>, many professionals, educators, and students have turned to <a href="Computer_algebra_system" title="Computer algebra system">computer algebra systems</a> that are specifically designed to perform difficult or tedious tasks, including integration. Symbolic integration has been one of the motivations for the development of the first such systems, like <a href="Macsyma" title="Macsyma">Macsyma</a>.</p>
+<p>A major mathematical difficulty in symbolic integration is that in many cases, a closed formula for the antiderivative of a rather simple-looking function does not exist. For instance, it is known that the antiderivatives of the functions <span class="texhtml">exp(<i>x</i><sup>2</sup>), <i>x</i><sup><i>x</i></sup></span> and <span class="texhtml">(sin <i>x</i>)/<i>x</i></span> cannot be expressed in the closed form involving only <a href="Rational_function" title="Rational function">rational</a> and <a href="Exponential_function" title="Exponential function">exponential</a> functions, <a href="Logarithm" title="Logarithm">logarithm</a>, <a href="Trigonometric_function" title="Trigonometric function" class="mw-redirect">trigonometric</a> and <a href="Inverse_trigonometric_function" title="Inverse trigonometric function" class="mw-redirect">inverse trigonometric functions</a>, and the operations of multiplication and composition; in other words, none of the three given functions is integrable in <a href="Elementary_function" title="Elementary function">elementary functions</a>, which are the functions which may be built from rational functions, <a href="Root_of_a_function" title="Root of a function" class="mw-redirect">roots of a polynomial</a>, logarithm, and exponential functions. The <a href="Risch_algorithm" title="Risch algorithm">Risch algorithm</a> provides a general criterion to determine whether the antiderivative of an elementary function is elementary, and, if it is, to compute it. Unfortunately, it turns out that functions with closed expressions of antiderivatives are the exception rather than the rule. Consequently, computerized algebra systems have no hope of being able to find an antiderivative for a randomly constructed elementary function. On the positive side, if the 'building blocks' for antiderivatives are fixed in advance, it may be still be possible to decide whether the antiderivative of a given function can be expressed using these blocks and operations of multiplication and composition, and to find the symbolic answer whenever it exists. The <a href="Risch_algorithm" title="Risch algorithm">Risch algorithm</a>, implemented in <a href="Mathematica" title="Mathematica">Mathematica</a> and other <a href="Computer_algebra_system" title="Computer algebra system">computer algebra systems</a>, does just that for functions and antiderivatives built from rational functions, <a href="Nth_root" title="Nth root">radicals</a>, logarithm, and exponential functions.</p>
+<p>Some special integrands occur often enough to warrant special study. In particular, it may be useful to have, in the set of antiderivatives, the <a href="Special_functions" title="Special functions">special functions</a> of <a href="Physics" title="Physics">physics</a> (like the <a href="Associated_Legendre_function" title="Associated Legendre function" class="mw-redirect">Legendre functions</a>, the <a href="Hypergeometric_function" title="Hypergeometric function">hypergeometric function</a>, the <a href="Gamma_function" title="Gamma function">Gamma function</a>, the <a href="Incomplete_Gamma_function" title="Incomplete Gamma function" class="mw-redirect">Incomplete Gamma function</a> and so on — see <a href="Symbolic_integration" title="Symbolic integration">Symbolic integration</a> for more details). Extending the Risch's algorithm to include such functions is possible but challenging and has been an active research subject.</p>
+<p>More recently a new approach has emerged, using <a href="D-finite_function" title="D-finite function" class="mw-redirect"><i>D</i>-finite function</a>, which are the solutions of <a href="Linear_differential_equation" title="Linear differential equation">linear differential equations</a> with polynomial coefficients. Most of the elementary and special functions are <i>D</i>-finite and the integral of a <i>D</i>-finite function is also a <i>D</i>-finite function. This provide an algorithm to express the antiderivative of a <i>D</i>-finite function as the solution of a differential equation.</p>
+<p>This theory allows also to compute a definite integrals of a <i>D</i>-function as the sum of a series given by the first coefficients and an algorithm to compute any coefficient.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Numerical">Numerical</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Numerical_integration" title="Numerical integration">Numerical integration</a></div>
+<p>The integrals encountered in a basic calculus course are deliberately chosen for simplicity; those found in real applications are not always so accommodating. Some integrals cannot be found exactly, some require special functions which themselves are a challenge to compute, and others are so complex that finding the exact answer is too slow. This motivates the study and application of numerical methods for approximating integrals, which today use <a href="Floating_point" title="Floating point">floating-point arithmetic</a> on digital electronic computers. Many of the ideas arose much earlier, for hand calculations; but the speed of general-purpose computers like the <a href="ENIAC" title="ENIAC">ENIAC</a> created a need for improvements.</p>
+<p>The goals of numerical integration are accuracy, reliability, efficiency, and generality. Sophisticated methods can vastly outperform a naive method by all four measures (<a href="#CITEREFDahlquistBj.C3.B6rck2008">Dahlquist &amp; Björck 2008</a>; <a href="#CITEREFKahanerMolerNash1989">Kahaner, Moler &amp; Nash 1989</a>; <a href="#CITEREFStoerBulirsch2002">Stoer &amp; Bulirsch 2002</a>). Consider, for example, the integral</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_{-2}^{2} \tfrac{1}{5} \left( \tfrac{1}{100}(322 + 3 x (98 + x (37 + x))) - 24 \frac{x}{1+x^2} \right) dx  "></dd>
+</dl>
+<p>which has the exact answer <span class="nowrap">94/25 = 3.76</span>. (In ordinary practice the answer is not known in advance, so an important task — not explored here — is to decide when an approximation is good enough.) A “calculus book” approach divides the integration range into, say, 16 equal pieces, and computes function values.</p>
+<dl>
+<dd>
+<table cellpadding="0" cellspacing="0" class="wikitable" style="text-align:center;background-color:white">
+<caption>Spaced function values</caption>
+<tr>
+<th><i>x</i></th>
+<td colspan="2">−2.00</td>
+<td colspan="2">−1.50</td>
+<td colspan="2">−1.00</td>
+<td colspan="2">−0.50</td>
+<td colspan="2"> 0.00</td>
+<td colspan="2"> 0.50</td>
+<td colspan="2"> 1.00</td>
+<td colspan="2"> 1.50</td>
+<td colspan="2"> 2.00</td>
+</tr>
+<tr style="font-size:80%">
+<th style="font-size:125%"><i>f</i>(<i>x</i>)</th>
+<td colspan="2"> 2.22800</td>
+<td colspan="2"> 2.45663</td>
+<td colspan="2"> 2.67200</td>
+<td colspan="2"> 2.32475</td>
+<td colspan="2"> 0.64400</td>
+<td colspan="2">−0.92575</td>
+<td colspan="2">−0.94000</td>
+<td colspan="2">−0.16963</td>
+<td colspan="2"> 0.83600</td>
+</tr>
+<tr>
+<th><i>x</i></th>
+<td> </td>
+<td colspan="2">−1.75</td>
+<td colspan="2">−1.25</td>
+<td colspan="2">−0.75</td>
+<td colspan="2">−0.25</td>
+<td colspan="2"> 0.25</td>
+<td colspan="2"> 0.75</td>
+<td colspan="2"> 1.25</td>
+<td colspan="2"> 1.75</td>
+<td></td>
+</tr>
+<tr style="font-size:80%">
+<th style="font-size:125%"><i>f</i>(<i>x</i>)</th>
+<td></td>
+<td colspan="2"> 2.33041</td>
+<td colspan="2"> 2.58562</td>
+<td colspan="2"> 2.62934</td>
+<td colspan="2"> 1.64019</td>
+<td colspan="2">−0.32444</td>
+<td colspan="2">−1.09159</td>
+<td colspan="2">−0.60387</td>
+<td colspan="2"> 0.31734</td>
+<td></td>
+</tr>
+<tr style="background-color:#aaa">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+</dd>
+</dl>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.wikipedia.org/wiki/File:Numerical_quadrature_4up.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Numerical_quadrature_4up.png/220px-Numerical_quadrature_4up.png" width="220" height="220" class="thumbimage" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Numerical_quadrature_4up.png/330px-Numerical_quadrature_4up.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Numerical_quadrature_4up.png/440px-Numerical_quadrature_4up.png 2x" data-file-width="1260" data-file-height="1260"></a>
+<div class="thumbcaption">
+
+Numerical quadrature methods: <span style="color:#bc1e47">■</span> Rectangle, <span style="color:#fec200">■</span> Trapezoid, <span style="color:#0081cd">■</span> Romberg, <span style="color:#009246">■</span> Gauss</div>
+</div>
+</div>
+<p>Using the left end of each piece, the <a href="Rectangle_method" title="Rectangle method">rectangle method</a> sums 16 function values and multiplies by the step width, <span class="texhtml mvar" style="font-style:italic;">h</span>, here 0.25, to get an approximate value of 3.94325 for the integral. The accuracy is not impressive, but calculus formally uses pieces of infinitesimal width, so initially this may seem little cause for concern. Indeed, repeatedly doubling the number of steps eventually produces an approximation of 3.76001. However, 2<sup>18</sup> pieces are required, a great computational expense for such little accuracy; and a reach for greater accuracy can force steps so small that arithmetic precision becomes an obstacle.</p>
+<p>A better approach replaces the horizontal tops of the rectangles with slanted tops touching the function at the ends of each piece. This <a href="Trapezium_rule" title="Trapezium rule" class="mw-redirect">trapezium rule</a> is almost as easy to calculate; it sums all 17 function values, but weights the first and last by one half, and again multiplies by the step width. This immediately improves the approximation to 3.76925, which is noticeably more accurate. Furthermore, only 2<sup>10</sup> pieces are needed to achieve 3.76000, substantially less computation than the rectangle method for comparable accuracy.</p>
+<p><a href="Romberg%27s_method" title="Romberg's method">Romberg's method</a> builds on the trapezoid method to great effect. First, the step lengths are halved incrementally, giving trapezoid approximations denoted by <span class="texhtml"><i>T</i>(<i>h</i><sub>0</sub>), <i>T</i>(<i>h</i><sub>1</sub>)</span>, and so on, where <span class="texhtml"><i>h</i><sub><i>k</i>+1</sub></span> is half of <span class="texhtml"><i>h</i><sub><i>k</i></sub></span>. For each new step size, only half the new function values need to be computed; the others carry over from the previous size (as shown in the table above). But the really powerful idea is to <a href="Interpolation" title="Interpolation">interpolate</a> a polynomial through the approximations, and extrapolate to <span class="texhtml"><i>T</i>(0)</span>. With this method a numerically <i>exact</i> answer here requires only four pieces (five function values). The <a href="Lagrange_polynomial" title="Lagrange polynomial">Lagrange polynomial</a> interpolating <span class="texhtml">{<i>h</i><sub><i>k</i></sub>,<i>T</i>(<i>h</i><sub><i>k</i></sub>)}<sub><i>k</i> = 0…2</sub> =</span> {(4.00,6.128), (2.00,4.352), (1.00,3.908)} is 3.76 + 0.148<span class="texhtml"><i>h</i><sup>2</sup></span>, producing the extrapolated value 3.76 at <span class="texhtml"><i>h</i> = 0</span>.</p>
+<p><a href="Gaussian_quadrature" title="Gaussian quadrature">Gaussian quadrature</a> often requires noticeably less work for superior accuracy. In this example, it can compute the function values at just two <span class="texhtml mvar" style="font-style:italic;">x</span> positions, <span class="texhtml">±2 ⁄ <span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;">3</span></span></span>, then double each value and sum to get the numerically exact answer. The explanation for this dramatic success lies in error analysis, and a little luck. An <span class="texhtml mvar" style="font-style:italic;">n</span>-point Gaussian method is exact for polynomials of degree up to <span class="texhtml">2<i>n</i> − 1</span>. The function in this example is a degree 3 polynomial, plus a term that cancels because the chosen endpoints are symmetric around zero. (Cancellation also benefits the Romberg method.)</p>
+<p>Shifting the range left a little, so the integral is from −2.25 to 1.75, removes the symmetry. Nevertheless, the trapezoid method is rather slow, the polynomial interpolation method of Romberg is acceptable, and the Gaussian method requires the least work — if the number of points is known in advance. As well, rational interpolation can use the same trapezoid evaluations as the Romberg method to greater effect.</p>
+<dl>
+<dd>
+<table class="wikitable" style="background-color:white;text-align:center">
+<caption>Quadrature method cost comparison</caption>
+<tr>
+<th style="text-align:right">Method</th>
+<td><b>Trapezoid</b></td>
+<td><b>Romberg</b></td>
+<td><b>Rational</b></td>
+<td><b>Gauss</b></td>
+</tr>
+<tr>
+<th style="text-align:right">Points</th>
+<td>1048577</td>
+<td>257</td>
+<td>129</td>
+<td>36</td>
+</tr>
+<tr>
+<th style="text-align:right">Rel. Err.</th>
+<td>−5.3×10<sup>−13</sup></td>
+<td>−6.3×10<sup>−15</sup></td>
+<td>8.8×10<sup>−15</sup></td>
+<td>3.1×10<sup>−15</sup></td>
+</tr>
+<tr>
+<th style="text-align:right">Value</th>
+<td colspan="4"><img class="mwe-math-fallback-image-inline tex" alt="\textstyle \int_{-2.25}^{1.75} f(x)\,dx = 4.1639019006585897075\ldots"></td>
+</tr>
+</table>
+</dd>
+</dl>
+<p>In practice, each method must use extra evaluations to ensure an error bound on an unknown function; this tends to offset some of the advantage of the pure Gaussian method, and motivates the popular <a href="Gauss%E2%80%93Kronrod_quadrature_formula" title="Gauss–Kronrod quadrature formula">Gauss–Kronrod quadrature formulae</a>. Symmetry can still be exploited by splitting this integral into two ranges, from −2.25 to −1.75 (no symmetry), and from −1.75 to 1.75 (symmetry). More broadly, <a href="Adaptive_quadrature" title="Adaptive quadrature">adaptive quadrature</a> partitions a range into pieces based on function properties, so that data points are concentrated where they are needed most.</p>
+<p><a href="Simpson%27s_rule" title="Simpson's rule">Simpson's rule</a>, named for <a href="Thomas_Simpson" title="Thomas Simpson">Thomas Simpson</a> (1710–1761), uses a parabolic curve to approximate integrals. In many cases, it is more accurate than the <a href="Trapezoidal_rule" title="Trapezoidal rule">trapezoidal rule</a> and others. The rule states that</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \int_a^b f(x) \, dx \approx \frac{b-a}{6}\left[f(a) + 4f\left(\frac{a+b}{2}\right)+f(b)\right],"></dd>
+</dl>
+<p>with an error of</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \left|-\frac{(b-a)^5}{2880} f^{(4)}(\xi)\right|."></dd>
+</dl>
+<p>The computation of higher-dimensional integrals (for example, volume calculations) makes important use of such alternatives as <a href="Monte_Carlo_integration" title="Monte Carlo integration">Monte Carlo integration</a>.</p>
+<p>A calculus text is no substitute for numerical analysis, but the reverse is also true. Even the best adaptive numerical code sometimes requires a user to help with the more demanding integrals. For example, improper integrals may require a change of variable or methods that can avoid infinite function values, and known properties like symmetry and periodicity may provide critical leverage.</p>
+<h3><span class="mw-headline" id="Mechanical">Mechanical</span></h3>
+<p>The area of an arbitrary two-dimensional shape can be determined using a measuring instrument called <a href="Planimeter" title="Planimeter">planimeter</a>. The volume of irregular objects can be measured with precision by the fluid <a href="Displacement_(fluid)" title="Displacement (fluid)">displaced</a> as the object is submerged.</p>
+<h3><span class="mw-headline" id="Geometrical">Geometrical</span></h3>
+<div class="hatnote relarticle mainarticle">Main article: <a href="Quadrature_(mathematics)" title="Quadrature (mathematics)">Quadrature (mathematics)</a></div>
+<p>Area can be found via <a href="Geometrical" title="Geometrical" class="mw-redirect">geometrical</a> <a href="Compass-and-straightedge_constructions" title="Compass-and-straightedge constructions" class="mw-redirect">compass-and-straightedge constructions</a> of an equivalent <a href="Square_(geometry)" title="Square (geometry)" class="mw-redirect">square</a>, e.g., <a href="Squaring_the_circle" title="Squaring the circle">squaring the circle</a>.</p>
+<h2><span class="mw-headline" id="Some_important_definite_integrals">Some important definite integrals</span></h2>
+<p>Mathematicians have used definite integrals as a tool to define identities. Among these identities is the definition of the <a href="Euler%E2%80%93Mascheroni_constant" title="Euler–Mascheroni constant">Euler–Mascheroni constant</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\gamma =  \int_1^ \infty\left({1\over\lfloor x\rfloor}-{1\over x}\right)\,dx \, ,"></dd>
+</dl>
+<p>the <a href="Gamma_function" title="Gamma function">Gamma function</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt=" \Gamma(z) = \int_0^\infty  e^{-t} t^{z-1} dt,"></dd>
+</dl>
+<p>the <a href="Fourier_transform" title="Fourier transform">Fourier transform</a> which is widely used in physics:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F(\xi) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i x\xi}\,dx,"></dd>
+</dl>
+<p><a href="Laplace_transform" title="Laplace transform">Laplace transform</a> which is widely used in engineering:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="F(s) = \int_0^{\infty} f(t) e^{-st} \,dt,"></dd>
+</dl>
+<p>and the <a href="Gaussian_Integral" title="Gaussian Integral" class="mw-redirect">Gaussian Integral</a> fundamental to the <a href="Normal_Distribution" title="Normal Distribution" class="mw-redirect">Normal Distribution</a> used in <a href="Probability" title="Probability">probability</a> and <a href="Statistics" title="Statistics">statistics</a>:</p>
+<dl>
+<dd><img class="mwe-math-fallback-image-inline tex" alt="\int_{-\infty}^{\infty} e^{-x^2}\,dx = \sqrt{\pi}."></dd>
+</dl>
+<h2><span class="mw-headline" id="See_also">See also</span></h2>
+
+<div class="div-col columns column-width" style="-moz-column-width: 25em; -webkit-column-width: 25em; column-width: 25em;">
+<ul>
+<li><a href="Antiderivative" title="Antiderivative">Antiderivative</a></li>
+<li><a href="Darboux_integral" title="Darboux integral">Darboux integral</a></li>
+<li><a href="Henstock%E2%80%93Kurzweil_integral" title="Henstock–Kurzweil integral">Henstock–Kurzweil integral</a></li>
+<li><a href="Integral_equation" title="Integral equation">Integral equation</a></li>
+<li><a href="Integral_symbol" title="Integral symbol">Integral symbol</a></li>
+<li><a href="Integration_by_parts" title="Integration by parts">Integration by parts</a></li>
+<li><a href="Lebesgue_integration" title="Lebesgue integration">Lebesgue integration</a></li>
+<li><a href="Lists_of_integrals" title="Lists of integrals">Lists of integrals</a> – integrals of the most common functions</li>
+<li><a href="Multiple_integral" title="Multiple integral">Multiple integral</a></li>
+<li><a href="Numerical_integration" title="Numerical integration">Numerical integration</a></li>
+<li><a href="Riemann_integral" title="Riemann integral">Riemann integral</a></li>
+<li><a href="Riemann_sum" title="Riemann sum">Riemann sum</a></li>
+<li><a href="Riemann%E2%80%93Stieltjes_integral" title="Riemann–Stieltjes integral">Riemann–Stieltjes integral</a></li>
+<li><a href="Symbolic_integration" title="Symbolic integration">Symbolic integration</a></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="Notes">Notes</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://algo.inria.fr/chyzak/mgfun.html">http://algo.inria.fr/chyzak/mgfun.html</a></span></li>
+</ol>
+</div>
+<h2><span class="mw-headline" id="References">References</span></h2>
+<div class="refbegin columns references-column-width" style="-moz-column-width: 35em; -webkit-column-width: 35em; column-width: 35em;">
+<ul>
+<li><span id="CITEREFApostol1967" class="citation"><a href="Tom_M._Apostol" title="Tom M. Apostol">Apostol, Tom M.</a> (1967), <i>Calculus, Vol. 1: One-Variable Calculus with an Introduction to Linear Algebra</i> (2nd ed.), <a href="John_Wiley_%26_Sons" title="John Wiley &amp; Sons">Wiley</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-471-00005-1" title="Special:BookSources/978-0-471-00005-1">978-0-471-00005-1</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.au=Apostol%2C+Tom+M.&amp;rft.aufirst=Tom+M.&amp;rft.aulast=Apostol&amp;rft.btitle=Calculus%2C+Vol.%26nbsp%3B1%3A+One-Variable+Calculus+with+an+Introduction+to+Linear+Algebra&amp;rft.date=1967&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=978-0-471-00005-1&amp;rft.pub=Wiley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFBourbaki2004" class="citation"><a href="Nicolas_Bourbaki" title="Nicolas Bourbaki">Bourbaki, Nicolas</a> (2004), <i>Integration I</i>, <a href="Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer Verlag</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/3-540-41129-1" title="Special:BookSources/3-540-41129-1">3-540-41129-1</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.au=Bourbaki%2C+Nicolas&amp;rft.aufirst=Nicolas&amp;rft.aulast=Bourbaki&amp;rft.btitle=Integration+I&amp;rft.date=2004&amp;rft.genre=book&amp;rft.isbn=3-540-41129-1&amp;rft.pub=Springer+Verlag&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span>. In particular chapters III and IV.</li>
+<li><span id="CITEREFBurton2005" class="citation">Burton, David M. (2005), <i>The History of Mathematics: An Introduction</i> (6th ed.), <a href="McGraw-Hill" title="McGraw-Hill" class="mw-redirect">McGraw-Hill</a>, p. 359, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-07-305189-5" title="Special:BookSources/978-0-07-305189-5">978-0-07-305189-5</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.au=Burton%2C+David+M.&amp;rft.aufirst=David+M.&amp;rft.aulast=Burton&amp;rft.btitle=The+History+of+Mathematics%3A+An+Introduction&amp;rft.date=2005&amp;rft.edition=6th&amp;rft.genre=book&amp;rft.isbn=978-0-07-305189-5&amp;rft.pages=359&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFCajori1929" class="citation"><a href="Florian_Cajori" title="Florian Cajori">Cajori, Florian</a> (1929), <a rel="nofollow" class="external text" href="http://www.archive.org/details/historyofmathema027671mbp"><i>A History Of Mathematical Notations Volume II</i></a>, <a href="Open_Court_Publishing_Company" title="Open Court Publishing Company">Open Court Publishing</a>, pp. 247–252, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-486-67766-8" title="Special:BookSources/978-0-486-67766-8">978-0-486-67766-8</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.au=Cajori%2C+Florian&amp;rft.aufirst=Florian&amp;rft.aulast=Cajori&amp;rft.btitle=A+History+Of+Mathematical+Notations+Volume+II&amp;rft.date=1929&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.archive.org%2Fdetails%2Fhistoryofmathema027671mbp&amp;rft.isbn=978-0-486-67766-8&amp;rft.pages=247-252&amp;rft.pub=Open+Court+Publishing&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFDahlquistBj.C3.B6rck2008" class="citation"><a href="Germund_Dahlquist" title="Germund Dahlquist">Dahlquist, Germund</a>; Björck, Åke (2008), "Chapter 5: Numerical Integration", <a rel="nofollow" class="external text" href="http://www.mai.liu.se/~akbjo/NMbook.html"><i>Numerical Methods in Scientific Computing, Volume I</i></a>, Philadelphia: <a href="Society_for_Industrial_and_Applied_Mathematics" title="Society for Industrial and Applied Mathematics">SIAM</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Chapter%26nbsp%3B5%3A+Numerical+Integration&amp;rft.au=Bj%C3%B6rck%2C+%C3%85ke&amp;rft.au=Dahlquist%2C+Germund&amp;rft.aufirst=Germund&amp;rft.aulast=Dahlquist&amp;rft.btitle=Numerical+Methods+in+Scientific+Computing%2C+Volume+I&amp;rft.date=2008&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.mai.liu.se%2F~akbjo%2FNMbook.html&amp;rft.place=Philadelphia&amp;rft.pub=SIAM&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFFolland1984" class="citation">Folland, Gerald B. (1984), <i>Real Analysis: Modern Techniques and Their Applications</i> (1st ed.), <a href="John_Wiley_%26_Sons" title="John Wiley &amp; Sons">John Wiley &amp; Sons</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-471-80958-6" title="Special:BookSources/978-0-471-80958-6">978-0-471-80958-6</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Gerald+B.&amp;rft.au=Folland%2C+Gerald+B.&amp;rft.aulast=Folland&amp;rft.btitle=Real+Analysis%3A+Modern+Techniques+and+Their+Applications&amp;rft.date=1984&amp;rft.edition=1st&amp;rft.genre=book&amp;rft.isbn=978-0-471-80958-6&amp;rft.pub=John+Wiley+%26+Sons&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFFourier1822" class="citation"><a href="Joseph_Fourier" title="Joseph Fourier">Fourier, Jean Baptiste Joseph</a> (1822), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=TDQJAAAAIAAJ"><i>Théorie analytique de la chaleur</i></a>, Chez Firmin Didot, père et fils, p. §231</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Jean+Baptiste+Joseph&amp;rft.au=Fourier%2C+Jean+Baptiste+Joseph&amp;rft.aulast=Fourier&amp;rft.btitle=Th%C3%A9orie+analytique+de+la+chaleur&amp;rft.date=1822&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DTDQJAAAAIAAJ&amp;rft.pages=%C2%A7231&amp;rft.pub=Chez+Firmin+Didot%2C+p%C3%A8re+et+fils&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span><br>
+Available in translation as <span id="CITEREFFourier1878" class="citation">Fourier, Joseph (1878), <a rel="nofollow" class="external text" href="http://www.archive.org/details/analyticaltheory00fourrich"><i>The analytical theory of heat</i></a>, Freeman, Alexander (trans.), <a href="Cambridge_University_Press" title="Cambridge University Press">Cambridge University Press</a>, pp. 200–201</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Joseph&amp;rft.au=Fourier%2C+Joseph&amp;rft.aulast=Fourier&amp;rft.btitle=The+analytical+theory+of+heat&amp;rft.date=1878&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.archive.org%2Fdetails%2Fanalyticaltheory00fourrich&amp;rft.pages=200-201&amp;rft.pub=Cambridge+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFHeath2002" class="citation"><a href="T._L._Heath" title="T. L. Heath" class="mw-redirect">Heath, T. L.</a>, ed. (2002), <a rel="nofollow" class="external text" href="http://www.archive.org/details/worksofarchimede029517mbp"><i>The Works of Archimedes</i></a>, <a href="Dover_Publications" title="Dover Publications">Dover</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-486-42084-4" title="Special:BookSources/978-0-486-42084-4">978-0-486-42084-4</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.btitle=The+Works+of+Archimedes&amp;rft.date=2002&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.archive.org%2Fdetails%2Fworksofarchimede029517mbp&amp;rft.isbn=978-0-486-42084-4&amp;rft.pub=Dover&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span><br>
+(Originally published by <a href="Cambridge_University_Press" title="Cambridge University Press">Cambridge University Press</a>, 1897, based on J. L. Heiberg's Greek version.)</li>
+<li><span id="CITEREFHildebrandt1953" class="citation">Hildebrandt, T. H. (1953), <a rel="nofollow" class="external text" href="http://projecteuclid.org/euclid.bams/1183517761">"Integration in abstract spaces"</a>, <i><a href="Bulletin_of_the_American_Mathematical_Society" title="Bulletin of the American Mathematical Society">Bulletin of the American Mathematical Society</a></i> <b>59</b> (2): 111–139, <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1090%2FS0002-9904-1953-09694-X">10.1090/S0002-9904-1953-09694-X</a>, <a href="International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/0273-0979">0273-0979</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Integration+in+abstract+spaces&amp;rft.aufirst=T.+H.&amp;rft.au=Hildebrandt%2C+T.+H.&amp;rft.aulast=Hildebrandt&amp;rft.date=1953&amp;rft.genre=article&amp;rft_id=http%3A%2F%2Fprojecteuclid.org%2Feuclid.bams%2F1183517761&amp;rft_id=info%3Adoi%2F10.1090%2FS0002-9904-1953-09694-X&amp;rft.issn=0273-0979&amp;rft.issue=2&amp;rft.jtitle=Bulletin+of+the+American+Mathematical+Society&amp;rft.pages=111-139&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.volume=59" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFKahanerMolerNash1989" class="citation">Kahaner, David; <a href="Cleve_Moler" title="Cleve Moler">Moler, Cleve</a>; Nash, Stephen (1989), "Chapter 5: Numerical Quadrature", <i>Numerical Methods and Software</i>, <a href="Prentice_Hall" title="Prentice Hall">Prentice Hall</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-13-627258-8" title="Special:BookSources/978-0-13-627258-8">978-0-13-627258-8</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Chapter%26nbsp%3B5%3A+Numerical+Quadrature&amp;rft.aufirst=David&amp;rft.au=Kahaner%2C+David&amp;rft.aulast=Kahaner&amp;rft.au=Moler%2C+Cleve&amp;rft.au=Nash%2C+Stephen&amp;rft.btitle=Numerical+Methods+and+Software&amp;rft.date=1989&amp;rft.genre=bookitem&amp;rft.isbn=978-0-13-627258-8&amp;rft.pub=Prentice+Hall&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFKallio1966" class="citation">Kallio, Bruce (1966), <a rel="nofollow" class="external text" href="https://circle.ubc.ca/bitstream/id/132341/UBC_1966_A8%20K3.pdf"><i>A History of the Definite Integral</i></a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Bruce&amp;rft.au=Kallio%2C+Bruce&amp;rft.aulast=Kallio&amp;rft.btitle=A+History+of+the+Definite+Integral&amp;rft.date=1966&amp;rft.genre=book&amp;rft_id=https%3A%2F%2Fcircle.ubc.ca%2Fbitstream%2Fid%2F132341%2FUBC_1966_A8%2520K3.pdf&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span> <span style="font-size:100%" class="error citation-comment"><code style="color:inherit; border:inherit; padding:inherit;">|first2=</code> missing <code style="color:inherit; border:inherit; padding:inherit;">|last2=</code> in Authors list (<a href="http://en.wikipedia.org/wiki/Help:CS1_errors#first_missing_last" title="Help:CS1 errors">help</a>)</span></li>
+<li><span id="CITEREFKatz2004" class="citation">Katz, Victor J. (2004), <i>A History of Mathematics, Brief Version</i>, <a href="Addison-Wesley" title="Addison-Wesley">Addison-Wesley</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-321-16193-2" title="Special:BookSources/978-0-321-16193-2">978-0-321-16193-2</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Victor+J.&amp;rft.au=Katz%2C+Victor+J.&amp;rft.aulast=Katz&amp;rft.btitle=A+History+of+Mathematics%2C+Brief+Version&amp;rft.date=2004&amp;rft.genre=book&amp;rft.isbn=978-0-321-16193-2&amp;rft.pub=Addison-Wesley&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFLeibniz1899" class="citation"><a href="Gottfried_Wilhelm_Leibniz" title="Gottfried Wilhelm Leibniz">Leibniz, Gottfried Wilhelm</a> (1899), Gerhardt, Karl Immanuel, ed., <a rel="nofollow" class="external text" href="http://name.umdl.umich.edu/AAX2762.0001.001"><i>Der Briefwechsel von Gottfried Wilhelm Leibniz mit Mathematikern. Erster Band</i></a>, Berlin: Mayer &amp; Müller</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Gottfried+Wilhelm&amp;rft.aulast=Leibniz&amp;rft.au=Leibniz%2C+Gottfried+Wilhelm&amp;rft.btitle=Der+Briefwechsel+von+Gottfried+Wilhelm+Leibniz+mit+Mathematikern.+Erster+Band&amp;rft.date=1899&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fname.umdl.umich.edu%2FAAX2762.0001.001&amp;rft.place=Berlin&amp;rft.pub=Mayer+%26amp%3B+M%C3%BCller&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFLiebLoss2001" class="citation"><a href="Elliott_H._Lieb" title="Elliott H. Lieb">Lieb, Elliott</a>; <a href="Michael_Loss" title="Michael Loss">Loss, Michael</a> (2001), <i>Analysis</i>, Graduate Studies in Mathematics <b>14</b> (2nd ed.), <a href="American_Mathematical_Society" title="American Mathematical Society">American Mathematical Society</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0821827833" title="Special:BookSources/978-0821827833">978-0821827833</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Elliott&amp;rft.aulast=Lieb&amp;rft.au=Lieb%2C+Elliott&amp;rft.au=Loss%2C+Michael&amp;rft.btitle=Analysis&amp;rft.date=2001&amp;rft.edition=2nd&amp;rft.genre=book&amp;rft.isbn=978-0821827833&amp;rft.pub=American+Mathematical+Society&amp;rft.series=Graduate+Studies+in+Mathematics&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.volume=14" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFMiller" class="citation">Miller, Jeff, <a rel="nofollow" class="external text" href="http://jeff560.tripod.com/calculus.html"><i>Earliest Uses of Symbols of Calculus</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">2009-11-22</span></span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Jeff&amp;rft.aulast=Miller&amp;rft.au=Miller%2C+Jeff&amp;rft.btitle=Earliest+Uses+of+Symbols+of+Calculus&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fjeff560.tripod.com%2Fcalculus.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFO.E2.80.99ConnorRobertson1996" class="citation">O’Connor, J. J.; Robertson, E. F. (1996), <a rel="nofollow" class="external text" href="http://www-history.mcs.st-andrews.ac.uk/HistTopics/The_rise_of_calculus.html"><i>A history of the calculus</i></a><span class="reference-accessdate">, retrieved <span class="nowrap">2007-07-09</span></span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=J.+J.&amp;rft.aulast=O%E2%80%99Connor&amp;rft.au=O%E2%80%99Connor%2C+J.+J.&amp;rft.au=Robertson%2C+E.+F.&amp;rft.btitle=A+history+of+the+calculus&amp;rft.date=1996&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww-history.mcs.st-andrews.ac.uk%2FHistTopics%2FThe_rise_of_calculus.html&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFRudin1987" class="citation"><a href="Walter_Rudin" title="Walter Rudin">Rudin, Walter</a> (1987), "Chapter 1: Abstract Integration", <i>Real and Complex Analysis</i> (International ed.), <a href="McGraw-Hill" title="McGraw-Hill" class="mw-redirect">McGraw-Hill</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-07-100276-9" title="Special:BookSources/978-0-07-100276-9">978-0-07-100276-9</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Chapter%26nbsp%3B1%3A+Abstract+Integration&amp;rft.aufirst=Walter&amp;rft.aulast=Rudin&amp;rft.au=Rudin%2C+Walter&amp;rft.btitle=Real+and+Complex+Analysis&amp;rft.date=1987&amp;rft.edition=International&amp;rft.genre=bookitem&amp;rft.isbn=978-0-07-100276-9&amp;rft.pub=McGraw-Hill&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFSaks1964" class="citation"><a href="Stanis%C5%82aw_Saks" title="Stanisław Saks">Saks, Stanisław</a> (1964), <a rel="nofollow" class="external text" href="http://matwbn.icm.edu.pl/kstresc.php?tom=7&amp;wyd=10&amp;jez="><i>Theory of the integral</i></a> (English translation by L. C. Young. With two additional notes by Stefan Banach. Second revised ed.), New York: Dover</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Stanis%C5%82aw&amp;rft.aulast=Saks&amp;rft.au=Saks%2C+Stanis%C5%82aw&amp;rft.btitle=Theory+of+the+integral&amp;rft.date=1964&amp;rft.edition=English+translation+by+L.+C.+Young.+With+two+additional+notes+by+Stefan+Banach.+Second+revised&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fmatwbn.icm.edu.pl%2Fkstresc.php%3Ftom%3D7%26wyd%3D10%26jez%3D&amp;rft.place=New+York&amp;rft.pub=Dover&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFShea2007" class="citation">Shea, Marilyn (May 2007), <a rel="nofollow" class="external text" href="http://hua.umf.maine.edu/China/astronomy/tianpage/0014ZuChongzhi9296bw.html"><i>Biography of Zu Chongzhi</i></a>, University of Maine<span class="reference-accessdate">, retrieved <span class="nowrap">9 January</span> 2009</span></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aufirst=Marilyn&amp;rft.aulast=Shea&amp;rft.au=Shea%2C+Marilyn&amp;rft.btitle=Biography+of+Zu+Chongzhi&amp;rft.date=May+2007&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fhua.umf.maine.edu%2FChina%2Fastronomy%2Ftianpage%2F0014ZuChongzhi9296bw.html&amp;rft.pub=University+of+Maine&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><span id="CITEREFSiegmund-Schultze2008" class="citation">Siegmund-Schultze, Reinhard (2008), "Henri Lebesgue", in Timothy Gowers, June Barrow-Green, Imre Leader, <i>Princeton Companion to Mathematics</i>, Princeton University Press</span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Henri+Lebesgue&amp;rft.aufirst=Reinhard&amp;rft.aulast=Siegmund-Schultze&amp;rft.au=Siegmund-Schultze%2C+Reinhard&amp;rft.btitle=Princeton+Companion+to+Mathematics&amp;rft.date=2008&amp;rft.genre=bookitem&amp;rft.pub=Princeton+University+Press&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span>.</li>
+<li><span id="CITEREFStoerBulirsch2002" class="citation">Stoer, Josef; Bulirsch, Roland (2002), "Chapter 3: Topics in Integration", <i>Introduction to Numerical Analysis</i> (3rd ed.), <a href="Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-0-387-95452-3" title="Special:BookSources/978-0-387-95452-3">978-0-387-95452-3</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Chapter%26nbsp%3B3%3A+Topics+in+Integration&amp;rft.au=Bulirsch%2C+Roland&amp;rft.aufirst=Josef&amp;rft.aulast=Stoer&amp;rft.au=Stoer%2C+Josef&amp;rft.btitle=Introduction+to+Numerical+Analysis&amp;rft.date=2002&amp;rft.edition=3rd&amp;rft.genre=bookitem&amp;rft.isbn=978-0-387-95452-3&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span>.</li>
+<li><span id="CITEREFW3C2006" class="citation">W3C (2006), <a rel="nofollow" class="external text" href="http://www.w3.org/TR/arabic-math/"><i>Arabic mathematical notation</i></a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.aulast=W3C&amp;rft.au=W3C&amp;rft.btitle=Arabic+mathematical+notation&amp;rft.date=2006&amp;rft.genre=book&amp;rft_id=http%3A%2F%2Fwww.w3.org%2FTR%2Farabic-math%2F&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+</ul>
+</div>
+<h2><span class="mw-headline" id="External_links">External links</span></h2>
+<table class="mbox-small plainlinks" style="border:1px solid #aaa;background-color:#f9f9f9">
+<tr>
+
+
+</tr>
+</table>
+<ul>
+<li><span id="CITEREFHazewinkel2001" class="citation">Hazewinkel, Michiel, ed. (2001), <a rel="nofollow" class="external text" href="http://www.encyclopediaofmath.org/index.php?title=p/i051340">"Integral"</a>, <i><a href="Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, <a href="Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.wikipedia.org/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4">978-1-55608-010-4</a></span><span title="ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AIntegral&amp;rft.atitle=Integral&amp;rft.btitle=Encyclopedia+of+Mathematics&amp;rft.date=2001&amp;rft.genre=bookitem&amp;rft_id=http%3A%2F%2Fwww.encyclopediaofmath.org%2Findex.php%3Ftitle%3Dp%2Fi051340&amp;rft.isbn=978-1-55608-010-4&amp;rft.pub=Springer&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook" class="Z3988"><span style="display:none;"> </span></span></li>
+<li><a rel="nofollow" class="external text" href="http://mathworld.wolfram.com/RiemannSum.html">Riemann Sum</a> by <a href="Wolfram_Research" title="Wolfram Research">Wolfram Research</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.khanacademy.org/video/introduction-to-definite-integrals?playlist=Calculus">Introduction to definite integrals</a> by <a href="Khan_Academy" title="Khan Academy">Khan Academy</a></li>
+</ul>
+<h3><span class="mw-headline" id="Online_books">Online books</span></h3>
+<ul>
+<li>Keisler, H. Jerome, <a rel="nofollow" class="external text" href="http://www.math.wisc.edu/~keisler/calc.html">Elementary Calculus: An Approach Using Infinitesimals</a>, University of Wisconsin</li>
+<li>Stroyan, K.D., <a rel="nofollow" class="external text" href="http://www.math.uiowa.edu/~stroyan/InfsmlCalculus/InfsmlCalc.htm">A Brief Introduction to Infinitesimal Calculus</a>, University of Iowa</li>
+<li>Mauch, Sean, <a rel="nofollow" class="external text" href="http://www.its.caltech.edu/~sean/book/unabridged.html"><i>Sean's Applied Math Book</i></a>, CIT, an online textbook that includes a complete introduction to calculus</li>
+<li>Crowell, Benjamin, <a rel="nofollow" class="external text" href="http://www.lightandmatter.com/calc/"><i>Calculus</i></a>, Fullerton College, an online textbook</li>
+<li>Garrett, Paul, <a rel="nofollow" class="external text" href="http://www.math.umn.edu/~garrett/calculus/">Notes on First-Year Calculus</a></li>
+<li>Hussain, Faraz, <a rel="nofollow" class="external text" href="http://www.understandingcalculus.com">Understanding Calculus</a>, an online textbook</li>
+<li>Kowalk, W.P., <a rel="nofollow" class="external text" href="http://einstein.informatik.uni-oldenburg.de/20910.html"><i>Integration Theory</i></a>, University of Oldenburg. A new concept to an old problem. Online textbook</li>
+<li>Sloughter, Dan, <a rel="nofollow" class="external text" href="http://math.furman.edu/~dcs/book">Difference Equations to Differential Equations</a>, an introduction to calculus</li>
+<li><a rel="nofollow" class="external text" href="http://numericalmethods.eng.usf.edu/topics/integration.html">Numerical Methods of Integration</a> at <i>Holistic Numerical Methods Institute</i></li>
+<li>P.S. Wang, <a rel="nofollow" class="external text" href="http://www.lcs.mit.edu/publications/specpub.php?id=660">Evaluation of Definite Integrals by Symbolic Manipulation</a> (1972) — a cookbook of definite integral techniques</li>
+</ul>
+
+
+
+
+</div>
