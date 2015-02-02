@@ -1,5 +1,30 @@
 Google Chrome Version 40.0.2214.93 (64-bit)
 
+* Setup/Usage
+
+  Get this repo with submodules:
+
+   #+BEGIN_SRC sh
+   git clone --recursive git@github.com:itkach/mathjax-perf-test.git
+   #+END_SRC
+
+  Open ~.html~ pages in mathjax-perf-test in a browser, open
+  JavaScript console, reload, watch console.
+
+  Use MathJax 2.5:
+
+   #+BEGIN_SRC sh
+   cd mathjax-perf-test/MathJax
+   git checkout master MathJax
+   #+END_SRC
+
+  Use MathJax 2.4:
+
+   #+BEGIN_SRC sh
+   cd mathjax-perf-test/MathJax
+   git checkout v2.4-latest
+   #+END_SRC
+
 * MediaWiki_HTML-CSS.js
 
 ** 2.4
